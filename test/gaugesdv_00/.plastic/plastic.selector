@@ -1,0 +1,4 @@
+repository "gaugesdv_00@qikai_en@cloud.cn"
+  path "/"
+    br "/main"
+    co "/main"
