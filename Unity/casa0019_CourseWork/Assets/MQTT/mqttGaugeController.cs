@@ -8,7 +8,7 @@ public class mqttGaugeController : MonoBehaviour
     [Header("   Case Sensitive!!")]
     [Tooltip("the topic to subscribe must contain this value. !!Case Sensitive!! ")]
     public string topicSubscribed = ""; //the topic to subscribe, it need to match a topic from the mqttManager
-    private float pointerValue = 0.0f;
+    private float pointerValue = 420f;
     [Space]
     [Space]
     public GameObject objectToControl; //pointer of the gauge, or other 3D models
@@ -62,7 +62,23 @@ public class mqttGaugeController : MonoBehaviour
         //We need to check the topic of the message to know where to use it 
         if (mqttObject.topic.Contains(topicSubscribed))
         {
-            pointerValue = float.Parse(mqttObject.msg);
+            //pointerValue = float.Parse(mqttObject.msg);
+            string input = mqttObject.msg;
+            int colonIndex = input.IndexOf(':');
+
+        if (colonIndex != -1)
+        {
+            // 获取冒号后面的子字符串并移除前导空格
+            string numberString = input.Substring(colonIndex + 1).Trim();
+
+            if (float.TryParse(numberString, out float result))
+            {
+                pointerValue = result;
+            }
+           
+        }
+       
+    
             Debug.Log("Event Fired. The message, from Object " + nameController + " is = " + pointerValue);
             Debug.Log(mqttObject.msg);
         }

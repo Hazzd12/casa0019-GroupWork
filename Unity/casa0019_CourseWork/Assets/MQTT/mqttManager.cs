@@ -182,12 +182,11 @@ public class mqttManager : M2MqttUnityClient
         Debug.Log("Received: " + mqttObject.msg + "from topic: " + mqttObject.topic);
 
         StoreMessage(mqttObject);
-        
-        if(OnMessageArrived !=null){
-        OnMessageArrived(mqttObject);
-        }
 
-        
+        OnMessageArrived?.Invoke(mqttObject);
+
+
+
     }
 
     private void StoreMessage(mqttObj eventMsg)

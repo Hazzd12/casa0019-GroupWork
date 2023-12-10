@@ -451,7 +451,6 @@
 "Assets/MQTT/mqttGaugeController.cs"
 "Assets/MQTT/mqttManager.cs"
 "Assets/MQTT/mqttTemperatureController.cs"
-"Assets/MQTT/test.cs"
 -langversion:9.0
 
 /deterministic
