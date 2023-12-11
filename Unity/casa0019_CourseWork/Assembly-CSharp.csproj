@@ -64,13 +64,15 @@
     <Analyzer Include="D:\Unity\Editor\2022.3.8f1c1\Editor\Data\Tools\Unity.SourceGenerators\Unity.Properties.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Coursework\script\ValEventer.cs" />
     <Compile Include="Assets\MQTT\M2Mqtt\MqttSettings.cs" />
     <Compile Include="Assets\MQTT\M2MqttUnity\Examples\Scripts\M2MqttUnityTest.cs" />
     <Compile Include="Assets\MQTT\M2Mqtt\Messages\MqttMsgUnsubscribeEventArgs.cs" />
     <Compile Include="Assets\MQTT\M2Mqtt\Messages\MqttMsgSubscribedEventArgs.cs" />
     <Compile Include="Assets\MQTT\M2MqttUnity\Scripts\BrokerSettings.cs" />
+    <Compile Include="Assets\Coursework\script\mqttTemperatureController.cs" />
     <Compile Include="Assets\MQTT\M2Mqtt\Messages\MqttMsgSubscribe.cs" />
-    <Compile Include="Assets\MQTT\mqttGaugeController.cs" />
+    <Compile Include="Assets\Coursework\script\OLEDManager.cs" />
     <Compile Include="Assets\MQTT\M2Mqtt\Messages\MqttMsgPuback.cs" />
     <Compile Include="Assets\MQTT\M2Mqtt\Exceptions\MqttTimeoutException.cs" />
     <Compile Include="Assets\MQTT\M2Mqtt\Session\MqttBrokerSession.cs" />
@@ -95,15 +97,17 @@
     <Compile Include="Assets\MQTT\M2Mqtt\Internal\MsgPublishedInternalEvent.cs" />
     <Compile Include="Assets\MQTT\M2Mqtt\Messages\MqttMsgPubrel.cs" />
     <Compile Include="Assets\MQTT\M2Mqtt\WinRT\Fx.cs" />
+    <Compile Include="Assets\Coursework\script\mqttWeatherController.cs" />
+    <Compile Include="Assets\Coursework\script\HideCanvas.cs" />
     <Compile Include="Assets\MQTT\M2Mqtt\MqttSecurity.cs" />
     <Compile Include="Assets\MQTT\M2Mqtt\WinRT\MqttNetworkChannel.cs" />
     <Compile Include="Assets\MQTT\M2Mqtt\IMqttNetworkChannel.cs" />
     <Compile Include="Assets\MQTT\M2MqttUnity\Scripts\M2MqttUnityClient.cs" />
     <Compile Include="Assets\MQTT\M2Mqtt\Session\MqttClientSession.cs" />
     <Compile Include="Assets\MQTT\M2Mqtt\Net\MqttNetworkChannel.cs" />
+    <Compile Include="Assets\Coursework\script\mqttGaugeController.cs" />
     <Compile Include="Assets\MQTT\M2Mqtt\Messages\MqttMsgPublishedEventArgs.cs" />
     <Compile Include="Assets\MQTT\M2Mqtt\Net\Fx.cs" />
-    <Compile Include="Assets\MQTT\mqttTemperatureController.cs" />
     <Compile Include="Assets\MQTT\M2Mqtt\Exceptions\MqttClientException.cs" />
     <Compile Include="Assets\MQTT\M2Mqtt\Internal\MsgInternalEvent.cs" />
     <Compile Include="Assets\MQTT\M2Mqtt\Messages\MqttMsgPublishEventArgs.cs" />
@@ -114,16 +118,38 @@
     <Compile Include="Assets\MQTT\M2Mqtt\Properties\AssemblyInfo.cs" />
     <Compile Include="Assets\MQTT\M2Mqtt\Session\MqttSession.cs" />
     <Compile Include="Assets\MQTT\M2Mqtt\Messages\MqttMsgPingResp.cs" />
+    <Compile Include="Assets\Coursework\script\TextController.cs" />
     <Compile Include="Assets\MQTT\M2Mqtt\Messages\MqttMsgPubcomp.cs" />
     <Compile Include="Assets\MQTT\M2Mqtt\Messages\MqttMsgSuback.cs" />
     <Compile Include="Assets\MQTT\M2Mqtt\Messages\MqttMsgUnsubscribe.cs" />
     <Compile Include="Assets\MQTT\M2Mqtt\Messages\MqttMsgUnsuback.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
     <None Include="Assets\MQTT\M2Mqtt\epl-v10.txt" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMPro_Mobile.cginc" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF SSD.shader" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface-Mobile.shader" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface.shader" />
+    <None Include="Assets\TextMesh Pro\Sprites\EmojiOne Attribution.txt" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Custom-Atlas.shader" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF.shader" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile SSD.shader" />
+    <None Include="Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMPro_Properties.cginc" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMPro_Surface.cginc" />
     <None Include="Assets\MQTT\M2Mqtt\edl-v10.txt" />
+    <None Include="Assets\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
     <None Include="Assets\ExampleAssets\Shaders\FeatheredPlaneShader.shader" />
     <None Include="Assets\MQTT\M2Mqtt\M2Mqtt_LICENSE.txt" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Masking.shader" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF Overlay.shader" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Mobile.shader" />
+    <None Include="Assets\TextMesh Pro\Fonts\LiberationSans - OFL.txt" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile.shader" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_Sprite.shader" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

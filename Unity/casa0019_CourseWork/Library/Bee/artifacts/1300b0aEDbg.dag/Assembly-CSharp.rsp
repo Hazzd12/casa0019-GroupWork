@@ -397,6 +397,13 @@
 -r:"Library/Bee/artifacts/1300b0aEDbg.dag/UnityEngine.XR.MagicLeap.ref.dll"
 -analyzer:"D:/Unity/Editor/2022.3.8f1c1/Editor/Data/Tools/Unity.SourceGenerators/Unity.Properties.SourceGenerator.dll"
 -analyzer:"D:/Unity/Editor/2022.3.8f1c1/Editor/Data/Tools/Unity.SourceGenerators/Unity.SourceGenerators.dll"
+"Assets/Coursework/script/HideCanvas.cs"
+"Assets/Coursework/script/mqttGaugeController.cs"
+"Assets/Coursework/script/mqttTemperatureController.cs"
+"Assets/Coursework/script/mqttWeatherController.cs"
+"Assets/Coursework/script/OLEDManager.cs"
+"Assets/Coursework/script/TextController.cs"
+"Assets/Coursework/script/ValEventer.cs"
 "Assets/ExampleAssets/Scripts/AnchorCreator.cs"
 "Assets/ExampleAssets/Scripts/ARFeatheredPlaneMeshVisualizer.cs"
 "Assets/MQTT/M2Mqtt/Exceptions/MqttClientException.cs"
@@ -448,9 +455,7 @@
 "Assets/MQTT/M2MqttUnity/Examples/Scripts/M2MqttUnityTest.cs"
 "Assets/MQTT/M2MqttUnity/Scripts/BrokerSettings.cs"
 "Assets/MQTT/M2MqttUnity/Scripts/M2MqttUnityClient.cs"
-"Assets/MQTT/mqttGaugeController.cs"
 "Assets/MQTT/mqttManager.cs"
-"Assets/MQTT/mqttTemperatureController.cs"
 -langversion:9.0
 
 /deterministic
