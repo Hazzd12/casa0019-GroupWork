@@ -1,0 +1,13 @@
+# .gitignore
+
+[Tt]emp/
+[Ll]ibrary/
+
+# 
+*.meta
+
+# 
+Library/
+
+#
+.DS_Store
