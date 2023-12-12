@@ -5,16 +5,16 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638375735557613806
-    m_Hash: 820146969
+      ticks: 638379995357746819
+    m_Hash: 1562674498
   m_LockFileStatus:
     m_FilePath: C:/Users/84241/Desktop/CASA/CASA0019/casa0019-GroupWork/Unity/casa0019_CourseWork/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638375735557773380
-    m_Hash: 2063789839
+      ticks: 638379995357795619
+    m_Hash: 3234201130
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_LocalPackages:
@@ -1027,6 +1027,242 @@ m_ResolvedPackages:
     path: 
   unityLifecycle:
     version: 1.9.0
+    nextVersion: 
+    recommendedVersion: 
+    isDeprecated: 0
+    deprecationMessage: 
+  isDeprecated: 0
+  deprecationMessage: 
+- packageId: com.unity.xr.arcore@5.0.7
+  testable: 0
+  isDirectDependency: 1
+  version: 5.0.7
+  source: 1
+  resolvedPath: C:\Users\84241\Desktop\CASA\CASA0019\casa0019-GroupWork\Unity\casa0019_CourseWork\Library\PackageCache\com.unity.xr.arcore@5.0.7
+  assetPath: Packages/com.unity.xr.arcore
+  name: com.unity.xr.arcore
+  displayName: Google ARCore XR Plugin
+  author:
+    name: 
+    email: 
+    url: 
+  category: 
+  type: 
+  description: 'Provides native Google ARCore integration for use with Unity''s multi-platform
+    XR API.
+
+    Supports the following features:
+
+    -Efficient Background Rendering
+
+    -Horizontal
+    Planes
+
+    -Depth Data
+
+    -Anchors
+
+    -Hit Testing
+
+    -Occlusion'
+  status: 0
+  errors: []
+  versions:
+    all:
+    - 1.0.0-preview.24
+    - 2.0.2
+    - 2.1.0-preview.4
+    - 2.1.0-preview.5
+    - 2.1.0
+    - 2.1.1
+    - 2.1.2
+    - 2.1.4
+    - 2.1.8
+    - 2.1.11
+    - 2.1.12
+    - 2.1.14
+    - 2.1.16
+    - 2.1.18
+    - 2.1.19
+    - 2.2.0-preview.1
+    - 2.2.0-preview.2
+    - 2.2.0-preview.6
+    - 3.0.0-preview.1
+    - 3.0.0-preview.2
+    - 3.0.0-preview.3
+    - 3.0.0-preview.4
+    - 3.0.1
+    - 3.0.3
+    - 3.0.4
+    - 3.1.0-preview.1
+    - 3.1.0-preview.2
+    - 3.1.0-preview.4
+    - 3.1.0-preview.6
+    - 3.1.0-preview.7
+    - 3.1.0-preview.8
+    - 3.1.3
+    - 3.1.4
+    - 3.1.5
+    - 3.1.7
+    - 3.1.8
+    - 3.1.10
+    - 4.0.0-preview.1
+    - 4.0.0-preview.3
+    - 4.0.3
+    - 4.0.4
+    - 4.0.8
+    - 4.0.9
+    - 4.0.10
+    - 4.0.12
+    - 4.1.0-preview.2
+    - 4.1.0-preview.3
+    - 4.1.0-preview.5
+    - 4.1.0-preview.6
+    - 4.1.0-preview.7
+    - 4.1.0-preview.9
+    - 4.1.0-preview.10
+    - 4.1.0-preview.11
+    - 4.1.0-preview.12
+    - 4.1.0-preview.13
+    - 4.1.1
+    - 4.1.3
+    - 4.1.5
+    - 4.1.7
+    - 4.1.9
+    - 4.1.10
+    - 4.1.12
+    - 4.1.13
+    - 4.2.0-pre.2
+    - 4.2.0-pre.3
+    - 4.2.0-pre.4
+    - 4.2.0-pre.5
+    - 4.2.0-pre.7
+    - 4.2.0-pre.8
+    - 4.2.0-pre.9
+    - 4.2.0-pre.10
+    - 4.2.0-pre.12
+    - 4.2.0
+    - 4.2.1
+    - 4.2.2
+    - 4.2.3
+    - 4.2.6
+    - 4.2.7
+    - 4.2.8
+    - 4.2.9
+    - 5.0.0-pre.5
+    - 5.0.0-pre.6
+    - 5.0.0-pre.7
+    - 5.0.0-pre.8
+    - 5.0.0-pre.9
+    - 5.0.0-pre.12
+    - 5.0.0-pre.13
+    - 5.0.2
+    - 5.0.3
+    - 5.0.4
+    - 5.0.5
+    - 5.0.6
+    - 5.0.7
+    - 5.1.0-pre.1
+    - 5.1.0-pre.2
+    - 5.1.0-pre.3
+    - 5.1.0-pre.4
+    - 5.1.0-pre.6
+    - 5.1.0-pre.8
+    - 5.1.0-pre.10
+    - 5.1.0
+    - 5.1.1
+    - 6.0.0-pre.3
+    - 6.0.0-pre.4
+    compatible:
+    - 5.0.7
+    - 5.1.0-pre.1
+    - 5.1.0-pre.2
+    - 5.1.0-pre.3
+    - 5.1.0-pre.4
+    - 5.1.0-pre.6
+    - 5.1.0-pre.8
+    - 5.1.0-pre.10
+    - 5.1.0
+    - 5.1.1
+    recommended: 5.0.7
+    deprecated: []
+  dependencies:
+  - name: com.unity.xr.arfoundation
+    version: 5.0.7
+  - name: com.unity.xr.core-utils
+    version: 2.1.0
+  - name: com.unity.xr.management
+    version: 4.0.1
+  - name: com.unity.modules.androidjni
+    version: 1.0.0
+  - name: com.unity.modules.unitywebrequest
+    version: 1.0.0
+  resolvedDependencies:
+  - name: com.unity.xr.arfoundation
+    version: 5.0.7
+  - name: com.unity.inputsystem
+    version: 1.6.3
+  - name: com.unity.modules.uielements
+    version: 1.0.0
+  - name: com.unity.modules.ui
+    version: 1.0.0
+  - name: com.unity.modules.imgui
+    version: 1.0.0
+  - name: com.unity.modules.jsonserialize
+    version: 1.0.0
+  - name: com.unity.xr.core-utils
+    version: 2.2.3
+  - name: com.unity.modules.xr
+    version: 1.0.0
+  - name: com.unity.modules.physics
+    version: 1.0.0
+  - name: com.unity.modules.subsystems
+    version: 1.0.0
+  - name: com.unity.xr.management
+    version: 4.3.3
+  - name: com.unity.modules.vr
+    version: 1.0.0
+  - name: com.unity.xr.legacyinputhelpers
+    version: 2.1.10
+  - name: com.unity.ugui
+    version: 1.0.0
+  - name: com.unity.mathematics
+    version: 1.2.6
+  - name: com.unity.modules.particlesystem
+    version: 1.0.0
+  - name: com.unity.modules.unityanalytics
+    version: 1.0.0
+  - name: com.unity.modules.unitywebrequest
+    version: 1.0.0
+  - name: com.unity.modules.androidjni
+    version: 1.0.0
+  keywords:
+  - arcore
+  - ar
+  - augmented
+  - xr
+  - reality
+  - core
+  registry:
+    id: main
+    name: 
+    url: https://packages.unity.cn
+    scopes: []
+    isDefault: 1
+    capabilities: 7
+    configSource: 0
+  hideInEditor: 1
+  isAssetStorePackage: 0
+  datePublishedTicks: 638259960300000000
+  documentationUrl: https://docs.unity3d.com/Packages/com.unity.xr.arcore@5.0/manual/index.html
+  hasRepository: 1
+  repository:
+    type: git
+    url: https://github.cds.internal.unity3d.com/unity/arfoundation.git
+    revision: 2ed0403e7f5d44edc028e2251019fb47962bd8d7
+    path: 
+  unityLifecycle:
+    version: 5.0.7
     nextVersion: 
     recommendedVersion: 
     isDeprecated: 0
@@ -3171,6 +3407,352 @@ m_ResolvedPackages:
     deprecationMessage: 
   isDeprecated: 0
   deprecationMessage: 
+- packageId: com.unity.xr.arfoundation@5.0.7
+  testable: 0
+  isDirectDependency: 0
+  version: 5.0.7
+  source: 1
+  resolvedPath: C:\Users\84241\Desktop\CASA\CASA0019\casa0019-GroupWork\Unity\casa0019_CourseWork\Library\PackageCache\com.unity.xr.arfoundation@5.0.7
+  assetPath: Packages/com.unity.xr.arfoundation
+  name: com.unity.xr.arfoundation
+  displayName: AR Foundation
+  author:
+    name: 
+    email: 
+    url: 
+  category: 
+  type: 
+  description: "A collection of Subsystems as well as MonoBehaviours and C# utilities
+    for working with the Subsystems. \n\nIncludes: \n\u25AA Definitions of Subsystems
+    \n\u25AA GameObject menu items for creating an AR setup \n\u25AA MonoBehaviours
+    that control AR session lifecycle and create GameObjects from detected, real-world
+    trackable features \n\u25AA Scale handling \n\u25AA Face tracking\n\nSamples
+    available at https://github.com/Unity-Technologies/arfoundation-samples"
+  status: 0
+  errors: []
+  versions:
+    all:
+    - 1.0.0-preview.12
+    - 1.0.0-preview.13
+    - 1.0.0-preview.14
+    - 1.0.0-preview.17
+    - 1.0.0-preview.18
+    - 1.0.0-preview.19
+    - 1.0.0-preview.20
+    - 1.0.0-preview.22
+    - 1.1.0-preview.6
+    - 1.5.0-preview.2
+    - 1.5.0-preview.5
+    - 1.5.0-preview.6
+    - 1.5.0-preview.7
+    - 2.0.2
+    - 2.1.0-preview.2
+    - 2.1.0-preview.3
+    - 2.1.1
+    - 2.1.3
+    - 2.1.4
+    - 2.1.8
+    - 2.1.10
+    - 2.1.14
+    - 2.1.16
+    - 2.1.18
+    - 2.1.19
+    - 2.2.0-preview.2
+    - 2.2.0-preview.3
+    - 2.2.0-preview.6
+    - 3.0.0-preview.1
+    - 3.0.0-preview.2
+    - 3.0.0-preview.3
+    - 3.0.0-preview.4
+    - 3.0.0-preview.6
+    - 3.0.1
+    - 3.1.0-preview.1
+    - 3.1.0-preview.3
+    - 3.1.0-preview.4
+    - 3.1.0-preview.6
+    - 3.1.0-preview.7
+    - 3.1.0-preview.8
+    - 3.1.3
+    - 3.1.5
+    - 3.1.6
+    - 3.1.10
+    - 4.0.0-preview.1
+    - 4.0.0-preview.3
+    - 4.0.2
+    - 4.0.8
+    - 4.0.9
+    - 4.0.10
+    - 4.0.12
+    - 4.1.0-preview.1
+    - 4.1.0-preview.2
+    - 4.1.0-preview.3
+    - 4.1.0-preview.5
+    - 4.1.0-preview.6
+    - 4.1.0-preview.7
+    - 4.1.0-preview.9
+    - 4.1.0-preview.10
+    - 4.1.0-preview.11
+    - 4.1.0-preview.12
+    - 4.1.0-preview.13
+    - 4.1.1
+    - 4.1.3
+    - 4.1.5
+    - 4.1.7
+    - 4.1.9
+    - 4.1.10
+    - 4.1.12
+    - 4.1.13
+    - 4.2.0-pre.2
+    - 4.2.0-pre.3
+    - 4.2.0-pre.4
+    - 4.2.0-pre.5
+    - 4.2.0-pre.7
+    - 4.2.0-pre.8
+    - 4.2.0-pre.9
+    - 4.2.0-pre.10
+    - 4.2.0-pre.12
+    - 4.2.0
+    - 4.2.1
+    - 4.2.2
+    - 4.2.3
+    - 4.2.6
+    - 4.2.7
+    - 4.2.8
+    - 4.2.9
+    - 5.0.0-pre.5
+    - 5.0.0-pre.6
+    - 5.0.0-pre.7
+    - 5.0.0-pre.8
+    - 5.0.0-pre.9
+    - 5.0.0-pre.12
+    - 5.0.0-pre.13
+    - 5.0.2
+    - 5.0.3
+    - 5.0.4
+    - 5.0.5
+    - 5.0.6
+    - 5.0.7
+    - 5.1.0-pre.1
+    - 5.1.0-pre.2
+    - 5.1.0-pre.3
+    - 5.1.0-pre.4
+    - 5.1.0-pre.6
+    - 5.1.0-pre.8
+    - 5.1.0-pre.9
+    - 5.1.0-pre.10
+    - 5.1.0
+    - 5.1.1
+    - 6.0.0-pre.3
+    - 6.0.0-pre.4
+    compatible:
+    - 5.0.7
+    - 5.1.0-pre.1
+    - 5.1.0-pre.2
+    - 5.1.0-pre.3
+    - 5.1.0-pre.4
+    - 5.1.0-pre.6
+    - 5.1.0-pre.8
+    - 5.1.0-pre.9
+    - 5.1.0-pre.10
+    - 5.1.0
+    - 5.1.1
+    recommended: 5.0.7
+    deprecated: []
+  dependencies:
+  - name: com.unity.inputsystem
+    version: 1.3.0
+  - name: com.unity.xr.core-utils
+    version: 2.1.0
+  - name: com.unity.xr.management
+    version: 4.0.1
+  - name: com.unity.ugui
+    version: 1.0.0
+  - name: com.unity.mathematics
+    version: 1.2.5
+  - name: com.unity.modules.particlesystem
+    version: 1.0.0
+  - name: com.unity.modules.ui
+    version: 1.0.0
+  - name: com.unity.modules.unityanalytics
+    version: 1.0.0
+  - name: com.unity.modules.unitywebrequest
+    version: 1.0.0
+  resolvedDependencies:
+  - name: com.unity.inputsystem
+    version: 1.6.3
+  - name: com.unity.modules.uielements
+    version: 1.0.0
+  - name: com.unity.modules.ui
+    version: 1.0.0
+  - name: com.unity.modules.imgui
+    version: 1.0.0
+  - name: com.unity.modules.jsonserialize
+    version: 1.0.0
+  - name: com.unity.xr.core-utils
+    version: 2.2.3
+  - name: com.unity.modules.xr
+    version: 1.0.0
+  - name: com.unity.modules.physics
+    version: 1.0.0
+  - name: com.unity.modules.subsystems
+    version: 1.0.0
+  - name: com.unity.xr.management
+    version: 4.3.3
+  - name: com.unity.modules.vr
+    version: 1.0.0
+  - name: com.unity.xr.legacyinputhelpers
+    version: 2.1.10
+  - name: com.unity.ugui
+    version: 1.0.0
+  - name: com.unity.mathematics
+    version: 1.2.6
+  - name: com.unity.modules.particlesystem
+    version: 1.0.0
+  - name: com.unity.modules.unityanalytics
+    version: 1.0.0
+  - name: com.unity.modules.unitywebrequest
+    version: 1.0.0
+  keywords:
+  - xr
+  - ar
+  - augmented
+  - reality
+  - utility
+  - utilities
+  - foundation
+  - core
+  - subsystem
+  - xreditorsubsystem
+  - arsimulation
+  registry:
+    id: main
+    name: 
+    url: https://packages.unity.cn
+    scopes: []
+    isDefault: 1
+    capabilities: 7
+    configSource: 0
+  hideInEditor: 1
+  isAssetStorePackage: 0
+  datePublishedTicks: 638259960270000000
+  documentationUrl: https://docs.unity3d.com/Packages/com.unity.xr.arfoundation@5.0/manual/index.html
+  hasRepository: 1
+  repository:
+    type: git
+    url: https://github.cds.internal.unity3d.com/unity/arfoundation.git
+    revision: 2ed0403e7f5d44edc028e2251019fb47962bd8d7
+    path: 
+  unityLifecycle:
+    version: 5.0.7
+    nextVersion: 
+    recommendedVersion: 
+    isDeprecated: 0
+    deprecationMessage: 
+  isDeprecated: 0
+  deprecationMessage: 
+- packageId: com.unity.xr.core-utils@2.2.3
+  testable: 0
+  isDirectDependency: 0
+  version: 2.2.3
+  source: 1
+  resolvedPath: C:\Users\84241\Desktop\CASA\CASA0019\casa0019-GroupWork\Unity\casa0019_CourseWork\Library\PackageCache\com.unity.xr.core-utils@2.2.3
+  assetPath: Packages/com.unity.xr.core-utils
+  name: com.unity.xr.core-utils
+  displayName: XR Core Utilities
+  author:
+    name: 
+    email: 
+    url: 
+  category: 
+  type: 
+  description: "Common utility classes for XR projects\nRefer to API documentation
+    for details. Some particularly useful utilities include:\n\u25AA Geometry Utilities\n 
+    \u25AA Point of closest approach\n  \u25AA Closest edge of a polygon\n  \u25AA
+    Check if point inside of polygon\n  \u25AA Compute 2D convex hull\n\u25AA Collection
+    pool\n\u25AA Math Utilities\n  \u25AA Bounds extensions\n  \u25AA Quaternion
+    extensions\n\u25AA Editor GUI\n  \u25AA Flags Property Drawer\n\u25AA Scriptable
+    Settings (serialized project settings)\n\u25AA Conditional Compilation Utility\n\u25AA
+    XR Origin Implementation"
+  status: 0
+  errors: []
+  versions:
+    all:
+    - 2.0.0-pre.3
+    - 2.0.0-pre.5
+    - 2.0.0-pre.6
+    - 2.0.0
+    - 2.0.1
+    - 2.1.0-pre.1
+    - 2.1.0
+    - 2.1.1
+    - 2.2.0-pre.1
+    - 2.2.0-pre.2
+    - 2.2.0
+    - 2.2.1
+    - 2.2.2
+    - 2.2.3
+    - 2.3.0-pre.1
+    - 2.3.0-pre.2
+    - 2.3.0-pre.3
+    - 2.4.0-exp.1
+    - 2.4.0-exp.2
+    - 2.4.0-exp.3
+    compatible:
+    - 2.2.3
+    - 2.3.0-pre.1
+    - 2.3.0-pre.2
+    - 2.3.0-pre.3
+    - 2.4.0-exp.1
+    - 2.4.0-exp.2
+    - 2.4.0-exp.3
+    recommended: 2.2.3
+    deprecated: []
+  dependencies:
+  - name: com.unity.modules.xr
+    version: 1.0.0
+  resolvedDependencies:
+  - name: com.unity.modules.xr
+    version: 1.0.0
+  - name: com.unity.modules.physics
+    version: 1.0.0
+  - name: com.unity.modules.jsonserialize
+    version: 1.0.0
+  - name: com.unity.modules.subsystems
+    version: 1.0.0
+  keywords:
+  - xr
+  - ar
+  - augmented
+  - reality
+  - utility
+  - utilities
+  - core
+  registry:
+    id: main
+    name: 
+    url: https://packages.unity.cn
+    scopes: []
+    isDefault: 1
+    capabilities: 7
+    configSource: 0
+  hideInEditor: 1
+  isAssetStorePackage: 0
+  datePublishedTicks: 638269927990000000
+  documentationUrl: https://docs.unity3d.com/Packages/com.unity.xr.core-utils@2.2/manual/index.html
+  hasRepository: 1
+  repository:
+    type: git
+    url: https://github.cds.internal.unity3d.com/unity/com.unity.xr.core-utils.git
+    revision: 334e8977dc25f14d394655c8e77354e4888c35d1
+    path: 
+  unityLifecycle:
+    version: 2.2.3
+    nextVersion: 
+    recommendedVersion: 
+    isDeprecated: 0
+    deprecationMessage: 
+  isDeprecated: 0
+  deprecationMessage: 
 - packageId: com.unity.ugui@1.0.0
   testable: 0
   isDirectDependency: 0
@@ -3846,249 +4428,6 @@ m_ResolvedPackages:
     deprecationMessage: 
   isDeprecated: 0
   deprecationMessage: 
-- packageId: com.unity.xr.arfoundation@5.0.7
-  testable: 0
-  isDirectDependency: 0
-  version: 5.0.7
-  source: 1
-  resolvedPath: C:\Users\84241\Desktop\CASA\CASA0019\casa0019-GroupWork\Unity\casa0019_CourseWork\Library\PackageCache\com.unity.xr.arfoundation@5.0.7
-  assetPath: Packages/com.unity.xr.arfoundation
-  name: com.unity.xr.arfoundation
-  displayName: AR Foundation
-  author:
-    name: 
-    email: 
-    url: 
-  category: 
-  type: 
-  description: "A collection of Subsystems as well as MonoBehaviours and C# utilities
-    for working with the Subsystems. \n\nIncludes: \n\u25AA Definitions of Subsystems
-    \n\u25AA GameObject menu items for creating an AR setup \n\u25AA MonoBehaviours
-    that control AR session lifecycle and create GameObjects from detected, real-world
-    trackable features \n\u25AA Scale handling \n\u25AA Face tracking\n\nSamples
-    available at https://github.com/Unity-Technologies/arfoundation-samples"
-  status: 0
-  errors: []
-  versions:
-    all:
-    - 1.0.0-preview.12
-    - 1.0.0-preview.13
-    - 1.0.0-preview.14
-    - 1.0.0-preview.17
-    - 1.0.0-preview.18
-    - 1.0.0-preview.19
-    - 1.0.0-preview.20
-    - 1.0.0-preview.22
-    - 1.1.0-preview.6
-    - 1.5.0-preview.2
-    - 1.5.0-preview.5
-    - 1.5.0-preview.6
-    - 1.5.0-preview.7
-    - 2.0.2
-    - 2.1.0-preview.2
-    - 2.1.0-preview.3
-    - 2.1.1
-    - 2.1.3
-    - 2.1.4
-    - 2.1.8
-    - 2.1.10
-    - 2.1.14
-    - 2.1.16
-    - 2.1.18
-    - 2.1.19
-    - 2.2.0-preview.2
-    - 2.2.0-preview.3
-    - 2.2.0-preview.6
-    - 3.0.0-preview.1
-    - 3.0.0-preview.2
-    - 3.0.0-preview.3
-    - 3.0.0-preview.4
-    - 3.0.0-preview.6
-    - 3.0.1
-    - 3.1.0-preview.1
-    - 3.1.0-preview.3
-    - 3.1.0-preview.4
-    - 3.1.0-preview.6
-    - 3.1.0-preview.7
-    - 3.1.0-preview.8
-    - 3.1.3
-    - 3.1.5
-    - 3.1.6
-    - 3.1.10
-    - 4.0.0-preview.1
-    - 4.0.0-preview.3
-    - 4.0.2
-    - 4.0.8
-    - 4.0.9
-    - 4.0.10
-    - 4.0.12
-    - 4.1.0-preview.1
-    - 4.1.0-preview.2
-    - 4.1.0-preview.3
-    - 4.1.0-preview.5
-    - 4.1.0-preview.6
-    - 4.1.0-preview.7
-    - 4.1.0-preview.9
-    - 4.1.0-preview.10
-    - 4.1.0-preview.11
-    - 4.1.0-preview.12
-    - 4.1.0-preview.13
-    - 4.1.1
-    - 4.1.3
-    - 4.1.5
-    - 4.1.7
-    - 4.1.9
-    - 4.1.10
-    - 4.1.12
-    - 4.1.13
-    - 4.2.0-pre.2
-    - 4.2.0-pre.3
-    - 4.2.0-pre.4
-    - 4.2.0-pre.5
-    - 4.2.0-pre.7
-    - 4.2.0-pre.8
-    - 4.2.0-pre.9
-    - 4.2.0-pre.10
-    - 4.2.0-pre.12
-    - 4.2.0
-    - 4.2.1
-    - 4.2.2
-    - 4.2.3
-    - 4.2.6
-    - 4.2.7
-    - 4.2.8
-    - 4.2.9
-    - 5.0.0-pre.5
-    - 5.0.0-pre.6
-    - 5.0.0-pre.7
-    - 5.0.0-pre.8
-    - 5.0.0-pre.9
-    - 5.0.0-pre.12
-    - 5.0.0-pre.13
-    - 5.0.2
-    - 5.0.3
-    - 5.0.4
-    - 5.0.5
-    - 5.0.6
-    - 5.0.7
-    - 5.1.0-pre.1
-    - 5.1.0-pre.2
-    - 5.1.0-pre.3
-    - 5.1.0-pre.4
-    - 5.1.0-pre.6
-    - 5.1.0-pre.8
-    - 5.1.0-pre.9
-    - 5.1.0-pre.10
-    - 5.1.0
-    - 5.1.1
-    - 6.0.0-pre.3
-    - 6.0.0-pre.4
-    compatible:
-    - 5.0.7
-    - 5.1.0-pre.1
-    - 5.1.0-pre.2
-    - 5.1.0-pre.3
-    - 5.1.0-pre.4
-    - 5.1.0-pre.6
-    - 5.1.0-pre.8
-    - 5.1.0-pre.9
-    - 5.1.0-pre.10
-    - 5.1.0
-    - 5.1.1
-    recommended: 5.0.7
-    deprecated: []
-  dependencies:
-  - name: com.unity.inputsystem
-    version: 1.3.0
-  - name: com.unity.xr.core-utils
-    version: 2.1.0
-  - name: com.unity.xr.management
-    version: 4.0.1
-  - name: com.unity.ugui
-    version: 1.0.0
-  - name: com.unity.mathematics
-    version: 1.2.5
-  - name: com.unity.modules.particlesystem
-    version: 1.0.0
-  - name: com.unity.modules.ui
-    version: 1.0.0
-  - name: com.unity.modules.unityanalytics
-    version: 1.0.0
-  - name: com.unity.modules.unitywebrequest
-    version: 1.0.0
-  resolvedDependencies:
-  - name: com.unity.inputsystem
-    version: 1.6.3
-  - name: com.unity.modules.uielements
-    version: 1.0.0
-  - name: com.unity.modules.ui
-    version: 1.0.0
-  - name: com.unity.modules.imgui
-    version: 1.0.0
-  - name: com.unity.modules.jsonserialize
-    version: 1.0.0
-  - name: com.unity.xr.core-utils
-    version: 2.2.3
-  - name: com.unity.modules.xr
-    version: 1.0.0
-  - name: com.unity.modules.physics
-    version: 1.0.0
-  - name: com.unity.modules.subsystems
-    version: 1.0.0
-  - name: com.unity.xr.management
-    version: 4.3.3
-  - name: com.unity.modules.vr
-    version: 1.0.0
-  - name: com.unity.xr.legacyinputhelpers
-    version: 2.1.10
-  - name: com.unity.ugui
-    version: 1.0.0
-  - name: com.unity.mathematics
-    version: 1.2.6
-  - name: com.unity.modules.particlesystem
-    version: 1.0.0
-  - name: com.unity.modules.unityanalytics
-    version: 1.0.0
-  - name: com.unity.modules.unitywebrequest
-    version: 1.0.0
-  keywords:
-  - xr
-  - ar
-  - augmented
-  - reality
-  - utility
-  - utilities
-  - foundation
-  - core
-  - subsystem
-  - xreditorsubsystem
-  - arsimulation
-  registry:
-    id: main
-    name: 
-    url: https://packages.unity.cn
-    scopes: []
-    isDefault: 1
-    capabilities: 7
-    configSource: 0
-  hideInEditor: 1
-  isAssetStorePackage: 0
-  datePublishedTicks: 638259960270000000
-  documentationUrl: https://docs.unity3d.com/Packages/com.unity.xr.arfoundation@5.0/manual/index.html
-  hasRepository: 1
-  repository:
-    type: git
-    url: https://github.cds.internal.unity3d.com/unity/arfoundation.git
-    revision: 2ed0403e7f5d44edc028e2251019fb47962bd8d7
-    path: 
-  unityLifecycle:
-    version: 5.0.7
-    nextVersion: 
-    recommendedVersion: 
-    isDeprecated: 0
-    deprecationMessage: 
-  isDeprecated: 0
-  deprecationMessage: 
 - packageId: com.unity.xr.arkit@5.0.7
   testable: 0
   isDirectDependency: 0
@@ -4329,242 +4668,6 @@ m_ResolvedPackages:
   isAssetStorePackage: 0
   datePublishedTicks: 638259960340000000
   documentationUrl: https://docs.unity3d.com/Packages/com.unity.xr.arkit@5.0/manual/index.html
-  hasRepository: 1
-  repository:
-    type: git
-    url: https://github.cds.internal.unity3d.com/unity/arfoundation.git
-    revision: 2ed0403e7f5d44edc028e2251019fb47962bd8d7
-    path: 
-  unityLifecycle:
-    version: 5.0.7
-    nextVersion: 
-    recommendedVersion: 
-    isDeprecated: 0
-    deprecationMessage: 
-  isDeprecated: 0
-  deprecationMessage: 
-- packageId: com.unity.xr.arcore@5.0.7
-  testable: 0
-  isDirectDependency: 0
-  version: 5.0.7
-  source: 1
-  resolvedPath: C:\Users\84241\Desktop\CASA\CASA0019\casa0019-GroupWork\Unity\casa0019_CourseWork\Library\PackageCache\com.unity.xr.arcore@5.0.7
-  assetPath: Packages/com.unity.xr.arcore
-  name: com.unity.xr.arcore
-  displayName: Google ARCore XR Plugin
-  author:
-    name: 
-    email: 
-    url: 
-  category: 
-  type: 
-  description: 'Provides native Google ARCore integration for use with Unity''s multi-platform
-    XR API.
-
-    Supports the following features:
-
-    -Efficient Background Rendering
-
-    -Horizontal
-    Planes
-
-    -Depth Data
-
-    -Anchors
-
-    -Hit Testing
-
-    -Occlusion'
-  status: 0
-  errors: []
-  versions:
-    all:
-    - 1.0.0-preview.24
-    - 2.0.2
-    - 2.1.0-preview.4
-    - 2.1.0-preview.5
-    - 2.1.0
-    - 2.1.1
-    - 2.1.2
-    - 2.1.4
-    - 2.1.8
-    - 2.1.11
-    - 2.1.12
-    - 2.1.14
-    - 2.1.16
-    - 2.1.18
-    - 2.1.19
-    - 2.2.0-preview.1
-    - 2.2.0-preview.2
-    - 2.2.0-preview.6
-    - 3.0.0-preview.1
-    - 3.0.0-preview.2
-    - 3.0.0-preview.3
-    - 3.0.0-preview.4
-    - 3.0.1
-    - 3.0.3
-    - 3.0.4
-    - 3.1.0-preview.1
-    - 3.1.0-preview.2
-    - 3.1.0-preview.4
-    - 3.1.0-preview.6
-    - 3.1.0-preview.7
-    - 3.1.0-preview.8
-    - 3.1.3
-    - 3.1.4
-    - 3.1.5
-    - 3.1.7
-    - 3.1.8
-    - 3.1.10
-    - 4.0.0-preview.1
-    - 4.0.0-preview.3
-    - 4.0.3
-    - 4.0.4
-    - 4.0.8
-    - 4.0.9
-    - 4.0.10
-    - 4.0.12
-    - 4.1.0-preview.2
-    - 4.1.0-preview.3
-    - 4.1.0-preview.5
-    - 4.1.0-preview.6
-    - 4.1.0-preview.7
-    - 4.1.0-preview.9
-    - 4.1.0-preview.10
-    - 4.1.0-preview.11
-    - 4.1.0-preview.12
-    - 4.1.0-preview.13
-    - 4.1.1
-    - 4.1.3
-    - 4.1.5
-    - 4.1.7
-    - 4.1.9
-    - 4.1.10
-    - 4.1.12
-    - 4.1.13
-    - 4.2.0-pre.2
-    - 4.2.0-pre.3
-    - 4.2.0-pre.4
-    - 4.2.0-pre.5
-    - 4.2.0-pre.7
-    - 4.2.0-pre.8
-    - 4.2.0-pre.9
-    - 4.2.0-pre.10
-    - 4.2.0-pre.12
-    - 4.2.0
-    - 4.2.1
-    - 4.2.2
-    - 4.2.3
-    - 4.2.6
-    - 4.2.7
-    - 4.2.8
-    - 4.2.9
-    - 5.0.0-pre.5
-    - 5.0.0-pre.6
-    - 5.0.0-pre.7
-    - 5.0.0-pre.8
-    - 5.0.0-pre.9
-    - 5.0.0-pre.12
-    - 5.0.0-pre.13
-    - 5.0.2
-    - 5.0.3
-    - 5.0.4
-    - 5.0.5
-    - 5.0.6
-    - 5.0.7
-    - 5.1.0-pre.1
-    - 5.1.0-pre.2
-    - 5.1.0-pre.3
-    - 5.1.0-pre.4
-    - 5.1.0-pre.6
-    - 5.1.0-pre.8
-    - 5.1.0-pre.10
-    - 5.1.0
-    - 5.1.1
-    - 6.0.0-pre.3
-    - 6.0.0-pre.4
-    compatible:
-    - 5.0.7
-    - 5.1.0-pre.1
-    - 5.1.0-pre.2
-    - 5.1.0-pre.3
-    - 5.1.0-pre.4
-    - 5.1.0-pre.6
-    - 5.1.0-pre.8
-    - 5.1.0-pre.10
-    - 5.1.0
-    - 5.1.1
-    recommended: 5.0.7
-    deprecated: []
-  dependencies:
-  - name: com.unity.xr.arfoundation
-    version: 5.0.7
-  - name: com.unity.xr.core-utils
-    version: 2.1.0
-  - name: com.unity.xr.management
-    version: 4.0.1
-  - name: com.unity.modules.androidjni
-    version: 1.0.0
-  - name: com.unity.modules.unitywebrequest
-    version: 1.0.0
-  resolvedDependencies:
-  - name: com.unity.xr.arfoundation
-    version: 5.0.7
-  - name: com.unity.inputsystem
-    version: 1.6.3
-  - name: com.unity.modules.uielements
-    version: 1.0.0
-  - name: com.unity.modules.ui
-    version: 1.0.0
-  - name: com.unity.modules.imgui
-    version: 1.0.0
-  - name: com.unity.modules.jsonserialize
-    version: 1.0.0
-  - name: com.unity.xr.core-utils
-    version: 2.2.3
-  - name: com.unity.modules.xr
-    version: 1.0.0
-  - name: com.unity.modules.physics
-    version: 1.0.0
-  - name: com.unity.modules.subsystems
-    version: 1.0.0
-  - name: com.unity.xr.management
-    version: 4.3.3
-  - name: com.unity.modules.vr
-    version: 1.0.0
-  - name: com.unity.xr.legacyinputhelpers
-    version: 2.1.10
-  - name: com.unity.ugui
-    version: 1.0.0
-  - name: com.unity.mathematics
-    version: 1.2.6
-  - name: com.unity.modules.particlesystem
-    version: 1.0.0
-  - name: com.unity.modules.unityanalytics
-    version: 1.0.0
-  - name: com.unity.modules.unitywebrequest
-    version: 1.0.0
-  - name: com.unity.modules.androidjni
-    version: 1.0.0
-  keywords:
-  - arcore
-  - ar
-  - augmented
-  - xr
-  - reality
-  - core
-  registry:
-    id: main
-    name: 
-    url: https://packages.unity.cn
-    scopes: []
-    isDefault: 1
-    capabilities: 7
-    configSource: 0
-  hideInEditor: 1
-  isAssetStorePackage: 0
-  datePublishedTicks: 638259960300000000
-  documentationUrl: https://docs.unity3d.com/Packages/com.unity.xr.arcore@5.0/manual/index.html
   hasRepository: 1
   repository:
     type: git
@@ -4864,77 +4967,6 @@ m_ResolvedPackages:
     deprecationMessage: 
   isDeprecated: 0
   deprecationMessage: 
-- packageId: com.unity.ext.nunit@1.0.6
-  testable: 0
-  isDirectDependency: 0
-  version: 1.0.6
-  source: 1
-  resolvedPath: C:\Users\84241\Desktop\CASA\CASA0019\casa0019-GroupWork\Unity\casa0019_CourseWork\Library\PackageCache\com.unity.ext.nunit@1.0.6
-  assetPath: Packages/com.unity.ext.nunit
-  name: com.unity.ext.nunit
-  displayName: Custom NUnit
-  author:
-    name: 
-    email: 
-    url: 
-  category: Libraries
-  type: 
-  description: Custom version of the nunit package build to work with Unity. Used
-    by the Unity Test Framework.
-  status: 0
-  errors: []
-  versions:
-    all:
-    - 0.1.5-preview
-    - 0.1.6-preview
-    - 0.1.9-preview
-    - 1.0.0
-    - 1.0.5
-    - 1.0.6
-    - 2.0.2
-    - 2.0.3
-    - 2.0.4
-    - 2.0.5
-    compatible:
-    - 1.0.6
-    - 2.0.2
-    - 2.0.3
-    - 2.0.4
-    - 2.0.5
-    recommended: 1.0.6
-    deprecated: []
-  dependencies: []
-  resolvedDependencies: []
-  keywords:
-  - nunit
-  - unittest
-  - test
-  registry:
-    id: main
-    name: 
-    url: https://packages.unity.cn
-    scopes: []
-    isDefault: 1
-    capabilities: 7
-    configSource: 0
-  hideInEditor: 1
-  isAssetStorePackage: 0
-  datePublishedTicks: 637429759280000000
-  documentationUrl: 
-  hasRepository: 1
-  repository:
-    type: git
-    url: https://github.cds.internal.unity3d.com/unity/com.unity.ext.nunit.git
-    revision: 29ea4d6504a5f58fb3a6934db839aa80ae6d9d88
-    path: 
-  unityLifecycle:
-    version: 1.0.6
-    nextVersion: 
-    recommendedVersion: 
-    isDeprecated: 0
-    deprecationMessage: 
-  isDeprecated: 0
-  deprecationMessage: 
 - packageId: com.unity.inputsystem@1.6.3
   testable: 0
   isDirectDependency: 0
@@ -5053,174 +5085,6 @@ m_ResolvedPackages:
     deprecationMessage: 
   isDeprecated: 0
   deprecationMessage: 
-- packageId: com.unity.xr.core-utils@2.2.3
-  testable: 0
-  isDirectDependency: 0
-  version: 2.2.3
-  source: 1
-  resolvedPath: C:\Users\84241\Desktop\CASA\CASA0019\casa0019-GroupWork\Unity\casa0019_CourseWork\Library\PackageCache\com.unity.xr.core-utils@2.2.3
-  assetPath: Packages/com.unity.xr.core-utils
-  name: com.unity.xr.core-utils
-  displayName: XR Core Utilities
-  author:
-    name: 
-    email: 
-    url: 
-  category: 
-  type: 
-  description: "Common utility classes for XR projects\nRefer to API documentation
-    for details. Some particularly useful utilities include:\n\u25AA Geometry Utilities\n 
-    \u25AA Point of closest approach\n  \u25AA Closest edge of a polygon\n  \u25AA
-    Check if point inside of polygon\n  \u25AA Compute 2D convex hull\n\u25AA Collection
-    pool\n\u25AA Math Utilities\n  \u25AA Bounds extensions\n  \u25AA Quaternion
-    extensions\n\u25AA Editor GUI\n  \u25AA Flags Property Drawer\n\u25AA Scriptable
-    Settings (serialized project settings)\n\u25AA Conditional Compilation Utility\n\u25AA
-    XR Origin Implementation"
-  status: 0
-  errors: []
-  versions:
-    all:
-    - 2.0.0-pre.3
-    - 2.0.0-pre.5
-    - 2.0.0-pre.6
-    - 2.0.0
-    - 2.0.1
-    - 2.1.0-pre.1
-    - 2.1.0
-    - 2.1.1
-    - 2.2.0-pre.1
-    - 2.2.0-pre.2
-    - 2.2.0
-    - 2.2.1
-    - 2.2.2
-    - 2.2.3
-    - 2.3.0-pre.1
-    - 2.3.0-pre.2
-    - 2.4.0-exp.1
-    - 2.4.0-exp.2
-    - 2.4.0-exp.3
-    compatible:
-    - 2.2.3
-    - 2.3.0-pre.1
-    - 2.3.0-pre.2
-    - 2.4.0-exp.1
-    - 2.4.0-exp.2
-    - 2.4.0-exp.3
-    recommended: 2.2.3
-    deprecated: []
-  dependencies:
-  - name: com.unity.modules.xr
-    version: 1.0.0
-  resolvedDependencies:
-  - name: com.unity.modules.xr
-    version: 1.0.0
-  - name: com.unity.modules.physics
-    version: 1.0.0
-  - name: com.unity.modules.jsonserialize
-    version: 1.0.0
-  - name: com.unity.modules.subsystems
-    version: 1.0.0
-  keywords:
-  - xr
-  - ar
-  - augmented
-  - reality
-  - utility
-  - utilities
-  - core
-  registry:
-    id: main
-    name: 
-    url: https://packages.unity.cn
-    scopes: []
-    isDefault: 1
-    capabilities: 7
-    configSource: 0
-  hideInEditor: 1
-  isAssetStorePackage: 0
-  datePublishedTicks: 638269927990000000
-  documentationUrl: https://docs.unity3d.com/Packages/com.unity.xr.core-utils@2.2/manual/index.html
-  hasRepository: 1
-  repository:
-    type: git
-    url: https://github.cds.internal.unity3d.com/unity/com.unity.xr.core-utils.git
-    revision: 334e8977dc25f14d394655c8e77354e4888c35d1
-    path: 
-  unityLifecycle:
-    version: 2.2.3
-    nextVersion: 
-    recommendedVersion: 
-    isDeprecated: 0
-    deprecationMessage: 
-  isDeprecated: 0
-  deprecationMessage: 
-- packageId: com.unity.xr.interactionsubsystems@2.0.0
-  testable: 0
-  isDirectDependency: 0
-  version: 2.0.0
-  source: 1
-  resolvedPath: C:\Users\84241\Desktop\CASA\CASA0019\casa0019-GroupWork\Unity\casa0019_CourseWork\Library\PackageCache\com.unity.xr.interactionsubsystems@2.0.0
-  assetPath: Packages/com.unity.xr.interactionsubsystems
-  name: com.unity.xr.interactionsubsystems
-  displayName: XR Interaction Subsystems
-  author:
-    name: 
-    email: 
-    url: 
-  category: 
-  type: 
-  description: Contains definitions for Interaction Subsystems. This package is a
-    dependency of provider packages.
-  status: 0
-  errors: []
-  versions:
-    all:
-    - 0.0.1-preview.3
-    - 1.0.0
-    - 1.0.1
-    - 2.0.0
-    compatible:
-    - 2.0.0
-    recommended: 2.0.0
-    deprecated: []
-  dependencies:
-  - name: com.unity.modules.subsystems
-    version: 1.0.0
-  resolvedDependencies:
-  - name: com.unity.modules.subsystems
-    version: 1.0.0
-  - name: com.unity.modules.jsonserialize
-    version: 1.0.0
-  keywords:
-  - subsystem
-  - XR
-  - Interaction
-  registry:
-    id: main
-    name: 
-    url: https://packages.unity.cn
-    scopes: []
-    isDefault: 1
-    capabilities: 7
-    configSource: 0
-  hideInEditor: 1
-  isAssetStorePackage: 0
-  datePublishedTicks: 638064766130000000
-  documentationUrl: 
-  hasRepository: 1
-  repository:
-    type: git
-    url: https://github.cds.internal.unity3d.com/unity/com.unity.xr.interactionsubsystems.git
-    revision: 22ce6c814bdd3a0e13cf34a88ea166b7745a3214
-    path: 
-  unityLifecycle:
-    version: 2.0.0
-    nextVersion: 
-    recommendedVersion: 
-    isDeprecated: 0
-    deprecationMessage: 
-  isDeprecated: 0
-  deprecationMessage: 
 - packageId: com.unity.mathematics@1.2.6
   testable: 0
   isDirectDependency: 0
@@ -5289,6 +5153,144 @@ m_ResolvedPackages:
     path: 
   unityLifecycle:
     version: 1.2.6
+    nextVersion: 
+    recommendedVersion: 
+    isDeprecated: 0
+    deprecationMessage: 
+  isDeprecated: 0
+  deprecationMessage: 
+- packageId: com.unity.ext.nunit@1.0.6
+  testable: 0
+  isDirectDependency: 0
+  version: 1.0.6
+  source: 1
+  resolvedPath: C:\Users\84241\Desktop\CASA\CASA0019\casa0019-GroupWork\Unity\casa0019_CourseWork\Library\PackageCache\com.unity.ext.nunit@1.0.6
+  assetPath: Packages/com.unity.ext.nunit
+  name: com.unity.ext.nunit
+  displayName: Custom NUnit
+  author:
+    name: 
+    email: 
+    url: 
+  category: Libraries
+  type: 
+  description: Custom version of the nunit package build to work with Unity. Used
+    by the Unity Test Framework.
+  status: 0
+  errors: []
+  versions:
+    all:
+    - 0.1.5-preview
+    - 0.1.6-preview
+    - 0.1.9-preview
+    - 1.0.0
+    - 1.0.5
+    - 1.0.6
+    - 2.0.2
+    - 2.0.3
+    - 2.0.4
+    - 2.0.5
+    compatible:
+    - 1.0.6
+    - 2.0.2
+    - 2.0.3
+    - 2.0.4
+    - 2.0.5
+    recommended: 1.0.6
+    deprecated: []
+  dependencies: []
+  resolvedDependencies: []
+  keywords:
+  - nunit
+  - unittest
+  - test
+  registry:
+    id: main
+    name: 
+    url: https://packages.unity.cn
+    scopes: []
+    isDefault: 1
+    capabilities: 7
+    configSource: 0
+  hideInEditor: 1
+  isAssetStorePackage: 0
+  datePublishedTicks: 637429759280000000
+  documentationUrl: 
+  hasRepository: 1
+  repository:
+    type: git
+    url: https://github.cds.internal.unity3d.com/unity/com.unity.ext.nunit.git
+    revision: 29ea4d6504a5f58fb3a6934db839aa80ae6d9d88
+    path: 
+  unityLifecycle:
+    version: 1.0.6
+    nextVersion: 
+    recommendedVersion: 
+    isDeprecated: 0
+    deprecationMessage: 
+  isDeprecated: 0
+  deprecationMessage: 
+- packageId: com.unity.xr.interactionsubsystems@2.0.0
+  testable: 0
+  isDirectDependency: 0
+  version: 2.0.0
+  source: 1
+  resolvedPath: C:\Users\84241\Desktop\CASA\CASA0019\casa0019-GroupWork\Unity\casa0019_CourseWork\Library\PackageCache\com.unity.xr.interactionsubsystems@2.0.0
+  assetPath: Packages/com.unity.xr.interactionsubsystems
+  name: com.unity.xr.interactionsubsystems
+  displayName: XR Interaction Subsystems
+  author:
+    name: 
+    email: 
+    url: 
+  category: 
+  type: 
+  description: Contains definitions for Interaction Subsystems. This package is a
+    dependency of provider packages.
+  status: 0
+  errors: []
+  versions:
+    all:
+    - 0.0.1-preview.3
+    - 1.0.0
+    - 1.0.1
+    - 2.0.0
+    compatible:
+    - 2.0.0
+    recommended: 2.0.0
+    deprecated: []
+  dependencies:
+  - name: com.unity.modules.subsystems
+    version: 1.0.0
+  resolvedDependencies:
+  - name: com.unity.modules.subsystems
+    version: 1.0.0
+  - name: com.unity.modules.jsonserialize
+    version: 1.0.0
+  keywords:
+  - subsystem
+  - XR
+  - Interaction
+  registry:
+    id: main
+    name: 
+    url: https://packages.unity.cn
+    scopes: []
+    isDefault: 1
+    capabilities: 7
+    configSource: 0
+  hideInEditor: 1
+  isAssetStorePackage: 0
+  datePublishedTicks: 638064766130000000
+  documentationUrl: 
+  hasRepository: 1
+  repository:
+    type: git
+    url: https://github.cds.internal.unity3d.com/unity/com.unity.xr.interactionsubsystems.git
+    revision: 22ce6c814bdd3a0e13cf34a88ea166b7745a3214
+    path: 
+  unityLifecycle:
+    version: 2.0.0
     nextVersion: 
     recommendedVersion: 
     isDeprecated: 0
