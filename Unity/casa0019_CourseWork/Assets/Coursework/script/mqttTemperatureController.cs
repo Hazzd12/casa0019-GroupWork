@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 public class mqttTemperatureController : ValEventer
 {
@@ -10,6 +11,11 @@ public class mqttTemperatureController : ValEventer
     [Header("   Case Sensitive!!")]
     [Tooltip("the topic to subscribe must contain this value. !!Case Sensitive!! ")]
     public string topicSubscribed = ""; //the topic to subscribe, it need to match a topic from the mqttManager
+    [Space]
+
+    [Tooltip("The title to show in UI and got By ValManager")]
+    public string title;
+
     [Space]
     [Tooltip("temperature min value")]
     public float minValue = 0;
@@ -38,6 +44,7 @@ public class mqttTemperatureController : ValEventer
     public Color goodTemperature = Color.green;
     
     [Space]
+    public TextMeshProUGUI textMeshPro;
     public mqttManager _eventSender;
 
     private void Awake()
@@ -87,7 +94,8 @@ public class mqttTemperatureController : ValEventer
         {
             temperatureVal = float.Parse(mqttObject.msg);
             Debug.Log("Event Fired. The message, from Object " + nameController + " is = " + name);
-            HandleValChanged("temperature", temperatureVal);
+            HandleValChanged(title, temperatureVal);
+            textMeshPro.text = title +": " + Math.Round(temperatureVal, 2);
         }
     }
 

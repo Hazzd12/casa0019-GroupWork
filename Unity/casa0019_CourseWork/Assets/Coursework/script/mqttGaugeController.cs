@@ -1,3 +1,4 @@
+using TMPro;
 using UnityEngine;
 
 public class mqttGaugeController : ValEventer
@@ -6,7 +7,8 @@ public class mqttGaugeController : ValEventer
     public string nameController = "Controller 1";
     public string tag_mqttManager = ""; //to be set on the Inspector panel. It must match one of the mqttManager.cs GameObject
     [Space]
-    public string topic;
+    [Tooltip("The title to show in UI and got By ValManager")]
+    public string title;
     [Space]
 
 
@@ -36,6 +38,8 @@ public class mqttGaugeController : ValEventer
     [Tooltip("Adjust the origin of the scale. negative values CCW; positive value CW")]
     public float adjustedStart = 0f; // negative values CCW; positive value CW
     [Space]
+    public TextMeshProUGUI textMeshPro;
+    
     public mqttManager _eventSender;
 
     void Awake()
@@ -82,8 +86,8 @@ public class mqttGaugeController : ValEventer
                 }
 
             }
-            HandleValChanged(topic, pointerValue);
-            Debug.Log("Event Fired. The message, from Object " + nameController + " is = " + pointerValue);
+            HandleValChanged(title, pointerValue);
+            textMeshPro.text = title + ": " + pointerValue;
         }
     }
 

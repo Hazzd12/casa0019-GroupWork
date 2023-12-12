@@ -22,6 +22,9 @@ public class mqttWeatherController : ValEventer
     public Judge[] judges; //the topic to subscribe, it need to match a topic from the mqttManager
     [Space]
 
+    [Tooltip("The title to show in UI and got By ValManager")]
+    public string title;
+
     [Space]
     public GameObject badWeather; //bad Weather led object to control
     public GameObject goodWeather; //good Weather led object to control
@@ -38,6 +41,7 @@ public class mqttWeatherController : ValEventer
     [Space]
     public mqttManager _eventSender;
 
+    private bool preIfGoodWeather = true;
     void Awake()
     {
         if (GameObject.FindGameObjectsWithTag(tag_mqttManager).Length > 0)
@@ -70,7 +74,6 @@ public class mqttWeatherController : ValEventer
             {
                 judge.val = float.Parse(mqttObject.msg);
                 Debug.Log("topic:"+judge.topic+" val:"+judge.val);
-                HandleValChanged(judge.topic, judge.val);
             }
         }
     }
@@ -92,6 +95,23 @@ public class mqttWeatherController : ValEventer
         else{
             badRenderer.material.color = badWeatherColor;
             goodRenderer.material.color = inactiveColor;
+        }
+
+        
+        if (preIfGoodWeather != ifGoodWeather)
+        {
+            Debug.Log("pre:" + preIfGoodWeather + " now:" + ifGoodWeather);
+            Debug.Log("!!!!!!!!!!!!!!!!!!!!!!!!!\n");
+            preIfGoodWeather = ifGoodWeather;
+            if (ifGoodWeather)
+            {
+                HandleValChanged(title, 1); //1 represent it is good Weather
+
+            }
+            else
+            {
+                HandleValChanged(title, 0); //0 represent it is bad Weather
+            }
         }
     }
 
