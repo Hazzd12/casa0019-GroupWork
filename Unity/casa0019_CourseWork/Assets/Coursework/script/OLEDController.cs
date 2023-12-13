@@ -6,16 +6,22 @@ using UnityEngine;
 public class OLEDController : MonoBehaviour
 {
 
-    [Tooltip("set the object to get the ValManager")]
-    public GameObject manager;
+    
     [Tooltip("the text to control")]
     public TextMeshPro textMeshPro;
-
+    public string tag_ValManager = ""; //to be set on the Inspector panel. It must match one of the valManager.cs GameObject
     public TextMeshProUGUI UGUI;
     public ValManager _eventSender;
 
     private void Awake() {
-        _eventSender = manager?.GetComponentInChildren<ValManager>();
+        if (GameObject.FindGameObjectsWithTag(tag_ValManager).Length > 0)
+        {
+            _eventSender = GameObject.FindGameObjectsWithTag(tag_ValManager)[0].gameObject.GetComponent<ValManager>();
+        }
+        else
+        {
+            Debug.LogError("At least one GameObject with mqttManager component and Tag == tag_mqttManager needs to be provided");
+        }
     }
 
     void OnEnable()
@@ -32,15 +38,5 @@ public class OLEDController : MonoBehaviour
     }
 
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }

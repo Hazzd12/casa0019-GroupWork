@@ -3,13 +3,18 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.XR.ARFoundation;
 using TMPro;
+using UnityEngine.UI;
 
 public class ARImageTracker : MonoBehaviour
 {
     public ARTrackedImageManager trackedImageManager;
+    public GameObject prefab;
     public GameObject background;
+    public GameObject button;
 
-
+    private void Start() {
+     button.SetActive(false);   
+    }
     void OnEnable()
     {
         trackedImageManager.trackedImagesChanged += OnTrackedImagesChanged;
@@ -27,19 +32,16 @@ public class ARImageTracker : MonoBehaviour
             // 处理图像被检测到时的逻辑
             HandleImageTracking(trackedImage);
         }
+    foreach (var trackedImage in eventArgs.updated){
+        HandleImageTracking(trackedImage);
+    }
  }
 
     void HandleImageTracking(ARTrackedImage trackedImage)
     {
-        if (trackedImage.trackingState == UnityEngine.XR.ARSubsystems.TrackingState.Tracking)
-        {
-            GameObject prefab = null;
-
-            if (prefab != null)
-            {
+        if (trackedImage.trackingState == UnityEngine.XR.ARSubsystems.TrackingState.Tracking){
                 background.SetActive(false);
-                
-            }
+                button.SetActive(true);
         }
     }
 

@@ -64,13 +64,12 @@
     <Analyzer Include="D:\Unity\Editor\2022.3.8f1c1\Editor\Data\Tools\Unity.SourceGenerators\Unity.Properties.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\XCharts\Runtime\Internal\Misc\ITooltipView.cs" />
     <Compile Include="Assets\XCharts\Runtime\Internal\Misc\ISerieContainer.cs" />
     <Compile Include="Assets\XCharts\Runtime\Component\State\SelectStyle.cs" />
     <Compile Include="Assets\XCharts\Runtime\Chart\RingChart.cs" />
     <Compile Include="Assets\XCharts\Runtime\Chart\SimplifiedLineChart.cs" />
-    <Compile Include="Assets\XCharts\Runtime\Internal\Attributes\ListForComponentAttribute.cs" />
     <Compile Include="Assets\XCharts\Runtime\Component\Comment\CommentMarkStyle.cs" />
+    <Compile Include="Assets\XCharts\Runtime\Internal\Attributes\ListForComponentAttribute.cs" />
     <Compile Include="Assets\XCharts\Runtime\Internal\BaseChart.cs" />
     <Compile Include="Assets\XCharts\Runtime\Chart\SimplifiedCandlestickChart.cs" />
     <Compile Include="Assets\XCharts\Runtime\Internal\Object\ChartObject.cs" />
@@ -106,11 +105,11 @@
     <Compile Include="Assets\XCharts\Runtime\Serie\SerieParams.cs" />
     <Compile Include="Assets\XCharts\Runtime\Serie\Line\LineHandler.PolarCoord.cs" />
     <Compile Include="Assets\XCharts\Runtime\Serie\Heatmap\HeatmapHandler.PolarCoord.cs" />
+    <Compile Include="Assets\XCharts\Runtime\Component\Axis\AxisHandler.cs" />
     <Compile Include="Assets\XCharts\Runtime\Serie\Pie\PieHandler.cs" />
     <Compile Include="Assets\XCharts\Runtime\Component\Tooltip\TooltipHelper.cs" />
     <Compile Include="Assets\XCharts\Runtime\Component\Label\LabelStyle.cs" />
     <Compile Include="Assets\XCharts\Runtime\Serie\Bar\SimplifiedBarHandler.cs" />
-    <Compile Include="Assets\XCharts\Runtime\Component\Axis\AxisHandler.cs" />
     <Compile Include="Assets\XCharts\Runtime\XUGL\SVG\SVG.cs" />
     <Compile Include="Assets\XCharts\Runtime\Component\Radar\RadarCoordContext.cs" />
     <Compile Include="Assets\XCharts\Runtime\Internal\XCResourcesImporter.cs" />
@@ -122,10 +121,10 @@
     <Compile Include="Assets\XCharts\Runtime\Serie\Line\LineHandler.cs" />
     <Compile Include="Assets\XCharts\Runtime\Internal\Object\LegendItem.cs" />
     <Compile Include="Assets\XCharts\Runtime\Component\Axis\RadiusAxis\RadiusAxis.cs" />
-    <Compile Include="Assets\XCharts\Runtime\Component\Child\AreaStyle.cs" />
-    <Compile Include="Assets\XCharts\Runtime\Component\Mark\MarkArea.cs" />
     <Compile Include="Assets\XCharts\Runtime\Component\Comment\Comment.cs" />
+    <Compile Include="Assets\XCharts\Runtime\Component\Mark\MarkArea.cs" />
     <Compile Include="Assets\XCharts\Runtime\Serie\Line\SimplifiedLineHandler.cs" />
+    <Compile Include="Assets\XCharts\Runtime\Component\Child\AreaStyle.cs" />
     <Compile Include="Assets\XCharts\Runtime\Internal\Utilities\ChartHelper.cs" />
     <Compile Include="Assets\XCharts\Runtime\Component\Child\SymbolStyle.cs" />
     <Compile Include="Assets\XCharts\Runtime\Internal\Attributes\SerieDataExtraFieldAttribute.cs" />
@@ -142,13 +141,13 @@
     <Compile Include="Assets\XCharts\Runtime\Helper\CheckHelper.cs" />
     <Compile Include="Assets\XCharts\Runtime\Coord\Calendar\CalendarCoordHandler.cs" />
     <Compile Include="Assets\XCharts\Runtime\Serie\Parallel\Parallel.cs" />
-    <Compile Include="Assets\XCharts\Runtime\Internal\BaseChart.API.cs" />
     <Compile Include="Assets\XCharts\Runtime\Utilities\ReflectionUtil.cs" />
+    <Compile Include="Assets\XCharts\Runtime\Internal\BaseChart.API.cs" />
     <Compile Include="Assets\XCharts\Runtime\Component\Title\Title.cs" />
     <Compile Include="Assets\XCharts\Runtime\Internal\Basic\CoordSystem.cs" />
+    <Compile Include="Assets\XCharts\Runtime\Serie\SerieHelper.cs" />
     <Compile Include="Assets\XCharts\Runtime\Component\Child\LevelStyle.cs" />
     <Compile Include="Assets\XCharts\Runtime\Internal\Basic\MainComponentContext.cs" />
-    <Compile Include="Assets\XCharts\Runtime\Serie\SerieHelper.cs" />
     <Compile Include="Assets\XCharts\Runtime\Chart\RadarChart.cs" />
     <Compile Include="Assets\XCharts\Runtime\Utilities\DefineSymbolsUtil.cs" />
     <Compile Include="Assets\XCharts\Runtime\Serie\Scatter\BaseScatter.cs" />
@@ -213,9 +212,9 @@
     <Compile Include="Assets\XCharts\Runtime\Component\Background\BackgroundHandler.cs" />
     <Compile Include="Assets\XCharts\Runtime\Component\Child\ItemStyle.cs" />
     <Compile Include="Assets\XCharts\Runtime\Coord\Polar\PolarHelper.cs" />
+    <Compile Include="Assets\XCharts\Runtime\Internal\Attributes\ListForSerieAttribute.cs" />
     <Compile Include="Assets\XCharts\Runtime\XUGL\UGLExample.cs" />
     <Compile Include="Assets\XCharts\Runtime\Theme\ComponentTheme.cs" />
-    <Compile Include="Assets\XCharts\Runtime\Internal\Attributes\ListForSerieAttribute.cs" />
     <Compile Include="Assets\XCharts\Runtime\Internal\Attributes\SerieDataComponentAttribute.cs" />
     <Compile Include="Assets\XCharts\Runtime\Coord\Grid\XGridLayout.cs" />
     <Compile Include="Assets\XCharts\Runtime\Component\State\BlurStyle.cs" />
@@ -284,8 +283,8 @@
     <Compile Include="Assets\XCharts\Runtime\Component\Axis\AxisLabel.cs" />
     <Compile Include="Assets\XCharts\Runtime\Component\Axis\SingleAxis\SingleAxisHandler.cs" />
     <Compile Include="Assets\XCharts\Runtime\Serie\Scatter\BaseScatterHandler.cs" />
-    <Compile Include="Assets\XCharts\Runtime\Component\Axis\AxisSplitArea.cs" />
     <Compile Include="Assets\XCharts\Runtime\Component\Child\MLValue.cs" />
+    <Compile Include="Assets\XCharts\Runtime\Component\Axis\AxisSplitArea.cs" />
     <Compile Include="Assets\XCharts\Runtime\Internal\Attributes\SerieComponentAttribute.cs" />
     <Compile Include="Assets\XCharts\Runtime\Chart\ScatterChart.cs" />
     <Compile Include="Assets\XCharts\Runtime\Internal\Pools\SerieDataPool.cs" />
@@ -322,6 +321,7 @@
     <Compile Include="Assets\XCharts\Runtime\Component\Axis\YAxis\YAxisHander.cs" />
     <Compile Include="Assets\XCharts\Runtime\Internal\XChartsMgr.cs" />
     <Compile Include="Assets\XCharts\Runtime\Component\DataZoom\DataZoomHelper.cs" />
+    <Compile Include="Assets\XCharts\Runtime\Internal\Misc\ITooltipView.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\XCharts\Runtime\XCharts.Runtime.asmdef" />
