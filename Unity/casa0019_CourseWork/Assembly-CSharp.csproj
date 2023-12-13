@@ -87,7 +87,7 @@
     <Compile Include="Assets\ExampleAssets\Scripts\AnchorCreator.cs" />
     <Compile Include="Assets\MQTT\M2Mqtt\WinRT\Hashtable.cs" />
     <Compile Include="Assets\MQTT\M2Mqtt\Messages\MqttMsgPubrec.cs" />
-    <Compile Include="Assets\Coursework\script\tapToPlace.cs" />
+    <Compile Include="Assets\Coursework\script\ARTracker.cs" />
     <Compile Include="Assets\MQTT\M2Mqtt\Messages\MqttMsgPingReq.cs" />
     <Compile Include="Assets\MQTT\M2Mqtt\Messages\MqttMsgUnsubscribedEventArgs.cs" />
     <Compile Include="Assets\MQTT\M2Mqtt\Internal\InternalEvent.cs" />
@@ -1238,6 +1238,9 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="LeanCommon.csproj" />
+    <ProjectReference Include="XCharts.Runtime.csproj" />
+    <ProjectReference Include="XCharts.Examples.csproj" />
+    <ProjectReference Include="XCharts.Editor.csproj" />
     <ProjectReference Include="CW.Common.csproj" />
   </ItemGroup>
   <Import Project="Sdk.targets" Sdk="Microsoft.NET.Sdk" />

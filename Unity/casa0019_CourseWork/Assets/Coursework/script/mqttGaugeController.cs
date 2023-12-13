@@ -1,5 +1,6 @@
 using TMPro;
 using UnityEngine;
+using XCharts.Runtime;
 
 public class mqttGaugeController : ValEventer
 {
@@ -41,6 +42,10 @@ public class mqttGaugeController : ValEventer
     public TextMeshProUGUI textMeshPro;
     
     public mqttManager _eventSender;
+
+    [Space]
+    public LineChart lineChart;
+    int count = 0; //simple counter for the data 
 
     void Awake()
     {
@@ -86,6 +91,9 @@ public class mqttGaugeController : ValEventer
                 }
 
             }
+
+            lineChart.AddData(1, count++, pointerValue);
+
             HandleValChanged(title, pointerValue);
             textMeshPro.text = title + ": " + pointerValue;
         }

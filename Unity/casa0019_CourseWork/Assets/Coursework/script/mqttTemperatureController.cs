@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using XCharts.Runtime;
 public class mqttTemperatureController : ValEventer
 {
     
@@ -46,6 +47,11 @@ public class mqttTemperatureController : ValEventer
     [Space]
     public TextMeshProUGUI textMeshPro;
     public mqttManager _eventSender;
+
+    [Space]
+    public LineChart lineChart;
+    int count = 0; //simple counter for the data 
+    
 
     private void Awake()
     {
@@ -96,6 +102,8 @@ public class mqttTemperatureController : ValEventer
             Debug.Log("Event Fired. The message, from Object " + nameController + " is = " + name);
             HandleValChanged(title, temperatureVal);
             textMeshPro.text = title +": " + Math.Round(temperatureVal, 2);
+
+            lineChart.AddData(0, count++, temperatureVal);
         }
     }
 

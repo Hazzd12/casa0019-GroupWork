@@ -3,7 +3,7 @@ using UnityEngine.UI;
 
 public class ButtonController : MonoBehaviour
 {
-    public Canvas canvas; // 引用Canvas
+    public GameObject canvas; // 引用Canvas
     void Start()
     {
         Debug.Log("Start method is called.");
