@@ -3223,7 +3223,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Good weather. You can enjoy outsite.
+  m_text: Good weather. You can enjoy outside.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -5670,11 +5670,11 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 2758819056908201968}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 2, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 2, y: -0}
   m_SizeDelta: {x: 0, y: 0}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_Pivot: {x: 0, y: 1}
 --- !u!222 &2159462329858594540
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -5710,7 +5710,7 @@ MonoBehaviour:
     m_BestFit: 0
     m_MinSize: 10
     m_MaxSize: 40
-    m_Alignment: 4
+    m_Alignment: 0
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 1
@@ -6423,11 +6423,11 @@ RectTransform:
   - {fileID: 4669080700480216458}
   m_Father: {fileID: 3287770572296162975}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 310, y: -150}
   m_SizeDelta: {x: 0, y: 0}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_Pivot: {x: 0, y: 1}
 --- !u!222 &1189217478230519752
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -7413,11 +7413,11 @@ RectTransform:
   - {fileID: 1802861805137848303}
   m_Father: {fileID: 3287770572296162975}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 1, y: 0.5}
-  m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: -310, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 310, y: -150}
   m_SizeDelta: {x: 0, y: 0}
-  m_Pivot: {x: 1, y: 0.5}
+  m_Pivot: {x: 0, y: 1}
 --- !u!222 &632502160168546651
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -7792,11 +7792,11 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 561642335596429709}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 1, y: 0.5}
-  m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: -2, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 2, y: -0}
   m_SizeDelta: {x: 0, y: 0}
-  m_Pivot: {x: 1, y: 0.5}
+  m_Pivot: {x: 0, y: 1}
 --- !u!222 &4432559696396162027
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -7832,7 +7832,7 @@ MonoBehaviour:
     m_BestFit: 0
     m_MinSize: 10
     m_MaxSize: 40
-    m_Alignment: 5
+    m_Alignment: 0
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 1
@@ -8023,11 +8023,11 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 6538776726246235124}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 1, y: 0.5}
-  m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: -2, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 2, y: -0}
   m_SizeDelta: {x: 0, y: 0}
-  m_Pivot: {x: 1, y: 0.5}
+  m_Pivot: {x: 0, y: 1}
 --- !u!222 &1505843230464376267
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -8063,7 +8063,7 @@ MonoBehaviour:
     m_BestFit: 0
     m_MinSize: 10
     m_MaxSize: 40
-    m_Alignment: 5
+    m_Alignment: 0
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 1
@@ -17131,10 +17131,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 94bc3cd45e0e7a447a7f262c9d46a0ba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  controller: {fileID: 7437764531673092392}
+  _eventSender:
+  - {fileID: 0}
+  judgements:
+  - title: CO2
+    val: 400
+    judgement: 1
+    max: 600
+    min: 400
+    errorMessage: CO2 is too high. Please open the window.
+  - title: Weather
+    val: 0
+    judgement: 0
+    max: 0
+    min: 0
+    errorMessage: Bad weather. Please stay at home.
+  defaultMessage: Good weather. You can enjoy outside.
   textMeshPro: {fileID: 5343245544427436014}
   tag_ValManager: ValManager
   UGUI: {fileID: 3692127240237063419}
-  _eventSender: {fileID: 0}
 --- !u!1 &6434988169183030177
 GameObject:
   m_ObjectHideFlags: 0
@@ -19927,7 +19943,7 @@ GameObject:
   - component: {fileID: 6858128606227110312}
   m_Layer: 0
   m_Name: ARObject 1
-  m_TagString: Untagged
+  m_TagString: ARObject
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -19967,10 +19983,10 @@ MonoBehaviour:
   topicSubscribed: dvp2/outTemp_C
   title: Temperature
   minValue: 0
-  step: 5
+  gap: 5
   colors: []
   inactiveColor: {r: 0.21960786, g: 0.21960786, b: 0.21960786, a: 1}
-  objectToControl: {fileID: 7480341944469465232}
+  LEDsParentObject: {fileID: 7480341944469465232}
   tag_LED: LED
   ledRenders: []
   badTemperature: {r: 1, g: 0, b: 0, a: 0}
@@ -19994,6 +20010,7 @@ MonoBehaviour:
   tag_mqttManager: manager
   title: CO2
   topicSubscribed: CDS/Value
+  pointerValue: 420
   objectToControl: {fileID: 1179664494479982212}
   rotationAxis: 2
   CW: 1
@@ -20020,7 +20037,7 @@ MonoBehaviour:
   tag_mqttManager: manager
   judges:
   - topic: UCL/OPS/Garden/WST/dvp2/outTemp_C
-    val: 0
+    val: 15
     max: 25
     min: 10
   - topic: UCL/OPS/Garden/WST/dvp2/rainRate_cm_per_hour
@@ -20028,7 +20045,7 @@ MonoBehaviour:
     max: 1
     min: 0
   - topic: UCL/OPS/Garden/WST/dvp2/windSpeed_kph
-    val: 0
+    val: 4.8
     max: 10.8
     min: 3.6
   title: Weather
@@ -20037,6 +20054,7 @@ MonoBehaviour:
   badWeatherColor: {r: 1, g: 0, b: 0, a: 1}
   goodWeatherColor: {r: 0, g: 1, b: 0, a: 1}
   _eventSender: {fileID: 0}
+  preIfGoodWeather: 1
 --- !u!1 &7443414639249427500
 GameObject:
   m_ObjectHideFlags: 0
@@ -20757,11 +20775,11 @@ RectTransform:
   - {fileID: 7686594364987320030}
   m_Father: {fileID: 3287770572296162975}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 1, y: 0.5}
-  m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: -310, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 310, y: -150}
   m_SizeDelta: {x: 0, y: 0}
-  m_Pivot: {x: 1, y: 0.5}
+  m_Pivot: {x: 0, y: 1}
 --- !u!222 &5033672845458653159
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -22792,10 +22810,90 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7535412397949044701, guid: 81bc02ab86c1cda42bb00569d78f6877,
+        type: 3}
+      propertyPath: m_TagString
+      value: LED
+      objectReference: {fileID: 0}
+    - target: {fileID: -7309081436782638143, guid: 81bc02ab86c1cda42bb00569d78f6877,
+        type: 3}
+      propertyPath: m_TagString
+      value: LED
+      objectReference: {fileID: 0}
+    - target: {fileID: -7184911620981080386, guid: 81bc02ab86c1cda42bb00569d78f6877,
+        type: 3}
+      propertyPath: m_TagString
+      value: LED
+      objectReference: {fileID: 0}
+    - target: {fileID: -5806509220759711002, guid: 81bc02ab86c1cda42bb00569d78f6877,
+        type: 3}
+      propertyPath: m_TagString
+      value: LED
+      objectReference: {fileID: 0}
+    - target: {fileID: -3280838637546170801, guid: 81bc02ab86c1cda42bb00569d78f6877,
+        type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
+    - target: {fileID: -2227494057422662842, guid: 81bc02ab86c1cda42bb00569d78f6877,
+        type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
+    - target: {fileID: -1562975146197392348, guid: 81bc02ab86c1cda42bb00569d78f6877,
+        type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
+    - target: {fileID: -846693198234168804, guid: 81bc02ab86c1cda42bb00569d78f6877,
+        type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 81bc02ab86c1cda42bb00569d78f6877,
         type: 3}
       propertyPath: m_Name
       value: Object2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1597274420612519304, guid: 81bc02ab86c1cda42bb00569d78f6877,
+        type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
+    - target: {fileID: 2461863314179358664, guid: 81bc02ab86c1cda42bb00569d78f6877,
+        type: 3}
+      propertyPath: m_TagString
+      value: LED
+      objectReference: {fileID: 0}
+    - target: {fileID: 6609227511379949551, guid: 81bc02ab86c1cda42bb00569d78f6877,
+        type: 3}
+      propertyPath: m_TagString
+      value: LED
+      objectReference: {fileID: 0}
+    - target: {fileID: 7029259357647614861, guid: 81bc02ab86c1cda42bb00569d78f6877,
+        type: 3}
+      propertyPath: m_TagString
+      value: LED
+      objectReference: {fileID: 0}
+    - target: {fileID: 7779041413718468580, guid: 81bc02ab86c1cda42bb00569d78f6877,
+        type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
+    - target: {fileID: 7820357789353316062, guid: 81bc02ab86c1cda42bb00569d78f6877,
+        type: 3}
+      propertyPath: m_TagString
+      value: LED
+      objectReference: {fileID: 0}
+    - target: {fileID: 8557989079769424765, guid: 81bc02ab86c1cda42bb00569d78f6877,
+        type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
+    - target: {fileID: 8750499346698080856, guid: 81bc02ab86c1cda42bb00569d78f6877,
+        type: 3}
+      propertyPath: m_TagString
+      value: Untagged
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:

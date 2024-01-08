@@ -12,9 +12,13 @@ public class ARImageTracker : MonoBehaviour
     public GameObject background;
     public GameObject button;
 
+    public GameObject ValManager;
+
     private void Start() {
      button.SetActive(false);   
+     ValManager.SetActive(false);
     }
+
     void OnEnable()
     {
         trackedImageManager.trackedImagesChanged += OnTrackedImagesChanged;
@@ -42,6 +46,7 @@ public class ARImageTracker : MonoBehaviour
         if (trackedImage.trackingState == UnityEngine.XR.ARSubsystems.TrackingState.Tracking){
                 background.SetActive(false);
                 button.SetActive(true);
+                ValManager.SetActive(true);
         }
     }
 

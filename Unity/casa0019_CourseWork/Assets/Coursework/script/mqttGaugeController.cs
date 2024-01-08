@@ -1,3 +1,4 @@
+using System.Text.RegularExpressions;
 using TMPro;
 using UnityEngine;
 using XCharts.Runtime;
@@ -16,7 +17,7 @@ public class mqttGaugeController : ValEventer
     [Header("   Case Sensitive!!")]
     [Tooltip("the topic to subscribe must contain this value. !!Case Sensitive!! ")]
     public string topicSubscribed = ""; //the topic to subscribe, it need to match a topic from the mqttManager
-    private float pointerValue = 420f;
+    public float pointerValue = 420f;
     [Space]
     [Space]
     public GameObject objectToControl; //pointer of the gauge, or other 3D models
@@ -78,22 +79,27 @@ public class mqttGaugeController : ValEventer
         {
             //pointerValue = float.Parse(mqttObject.msg);
             string input = mqttObject.msg;
-            int colonIndex = input.IndexOf(':');
+       // 使用正则表达式提取数字部分
+            string pattern = @"\d+";
+             MatchCollection matches = Regex.Matches(input, pattern);
 
-            if (colonIndex != -1)
+        // 将匹配的数字转换为float并打印
+            foreach (Match match in matches)
+         {
+            if (float.TryParse(match.Value, out float result))
             {
-                // Extract the substring after the colon and remove leading spaces.
-                string numberString = input.Substring(colonIndex + 1).Trim();
-
-                if (float.TryParse(numberString, out float result))
-                {
-                    pointerValue = result;
-                }
-
+                Debug.Log("result:"+result);
+                pointerValue = result;
             }
+            else
+            {
+                Debug.Log("No result");
+            }
+        }
 
             lineChart.AddData(1, count++, pointerValue);
 
+            Debug.Log("CO2: "+pointerValue);
             HandleValChanged(title, pointerValue);
             textMeshPro.text = title + ": " + pointerValue;
         }

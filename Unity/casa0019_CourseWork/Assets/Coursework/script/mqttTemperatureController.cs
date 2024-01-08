@@ -20,8 +20,8 @@ public class mqttTemperatureController : ValEventer
     [Space]
     [Tooltip("temperature min value")]
     public float minValue = 0;
-    [Tooltip("temperature each step")]
-    public int step = 5;
+    [Tooltip("temperature each gap")]
+    public int gap = 5;
     //the maxium temperature will be calculated by the number of LEDS and minVal;
 
 
@@ -33,7 +33,7 @@ public class mqttTemperatureController : ValEventer
 
     [Space]
     [Space]
-    public GameObject objectToControl; //LED Bar to control
+    public GameObject LEDsParentObject; //LED Bar to control
 
     public string tag_LED="";//to be set on the Inspector panel. In order to get LED line.
     public  Renderer[] ledRenders;
@@ -69,7 +69,7 @@ public class mqttTemperatureController : ValEventer
     void OnEnable()
     {
         _eventSender.OnMessageArrived += OnMessageArrivedHandler;
-        ledRenders = GetChildObjectsWithTag(objectToControl.transform, tag_LED);
+        ledRenders = GetChildObjectsWithTag(LEDsParentObject.transform, tag_LED);
         MidIndex = (ledRenders.Length-1)/2;
         Color[] tempColor = new Color[ledRenders.Length];
         //set colors for each led
@@ -99,7 +99,7 @@ public class mqttTemperatureController : ValEventer
         if (mqttObject.topic.Contains(topicSubscribed))
         {
             temperatureVal = float.Parse(mqttObject.msg);
-            Debug.Log("Event Fired. The message, from Object " + nameController + " is = " + name);
+            Debug.Log("Event Fired. The message, from Object " + nameController + " is = " + temperatureVal +" "+mqttObject.msg);
             HandleValChanged(title, temperatureVal);
             textMeshPro.text = title +": " + Math.Round(temperatureVal, 2);
 
@@ -110,7 +110,7 @@ public class mqttTemperatureController : ValEventer
     private void Update()
     {
         
-        int index = (int)MathF.Floor((temperatureVal-minValue)/step);
+        int index = (int)MathF.Floor((temperatureVal-minValue)/gap);
         if(index<0){
             index = 0;
         }

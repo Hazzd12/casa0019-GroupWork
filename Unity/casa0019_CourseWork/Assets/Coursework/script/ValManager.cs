@@ -3,20 +3,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-[System.Serializable]
-public class Restriction
-{
-    public string title;
-    public float val;
-    [Tooltip("true -> judged by range; false -> judged by the val(which is originally bool)")]
-    public bool judgement; // when judgement is false, max and min don't matter
-    public float max;
-    public float min;
-    public string errorMessage; // the message shown in the OLED when the val is not in the range or bad.
-}
 
 public class ValManager : MonoBehaviour
 {
+    public string prefabTag;
     [Tooltip("set the object to get its senders(script with ValEventer)")]
     public GameObject controller;
     public ValEventer[] _eventSender;
@@ -29,16 +19,28 @@ public class ValManager : MonoBehaviour
 
     public event OnOLEDChangedDelegate OnOLEDChanged;
     public delegate void OnOLEDChangedDelegate(string message);
-    private void Awake()
-    {
-        _eventSender = controller?.GetComponentsInChildren<ValEventer>();
-    }
+    // private void Awake()
+    // {
+    //     controller = GameObject.Find("ARObject");
+    //     _eventSender = controller?.GetComponentsInChildren<ValEventer>();
+    // }
 
     void OnEnable()
     {
+        controller = GameObject.FindGameObjectWithTag(prefabTag);
+        _eventSender = controller?.GetComponentsInChildren<ValEventer>();
+        Debug.Log("Test");
         foreach (ValEventer sender in _eventSender)
         {
             sender.OnValueChanged += OnMessageArrivedHandler;
+        }
+    }
+
+    private void OnDisable()
+    {
+        foreach (ValEventer sender in _eventSender)
+        {
+            sender.OnValueChanged -= OnMessageArrivedHandler;
         }
     }
 
@@ -54,6 +56,7 @@ public class ValManager : MonoBehaviour
                 Debug.Log(judge.title);
                 judge.val = text.val;
             }
+
             if (judge.judgement){
                     if (judge.min > judge.val || judge.max < judge.val){
                         flag2 = false;
@@ -71,22 +74,11 @@ public class ValManager : MonoBehaviour
                     
                 }
         }
-        Debug.Log(message);
+        Debug.Log("OLED"+message);
         OnOLEDChanged?.Invoke(message);
 
 
     }
 
-
-    void Start()
-    {
-
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
 
 }

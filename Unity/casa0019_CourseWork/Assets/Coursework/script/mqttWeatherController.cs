@@ -41,7 +41,7 @@ public class mqttWeatherController : ValEventer
     [Space]
     public mqttManager _eventSender;
 
-    private bool preIfGoodWeather = true;
+    public bool preIfGoodWeather = true;
     void Awake()
     {
         if (GameObject.FindGameObjectsWithTag(tag_mqttManager).Length > 0)
@@ -106,11 +106,13 @@ public class mqttWeatherController : ValEventer
             if (ifGoodWeather)
             {
                 HandleValChanged(title, 1); //1 represent it is good Weather
+                Debug.Log("good weather event");
 
             }
             else
             {
                 HandleValChanged(title, 0); //0 represent it is bad Weather
+                Debug.Log("bad weather event");
             }
         }
     }
