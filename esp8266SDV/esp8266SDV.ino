@@ -8,8 +8,8 @@
 #include <DHT_U.h>
 #include <U8g2lib.h>
 
-#define LED1 14
-#define LED2 12
+#define LED1 14 //red
+#define LED2 12 //green 
 #define LEDstrip 13
 #define servo 15
 #define NUMPIXELS 8
@@ -19,7 +19,9 @@ U8G2_SSD1306_128X64_NONAME_F_HW_I2C u8g2(U8G2_R0, /* reset=*/U8X8_PIN_NONE, /* c
 Servo myservo;        // create a servo object 
 int pos=0;          // define pos for storing the degree that servo rotates
 int angle=0;
-
+float tmp=0;
+float ws=0;
+float rain=0;
 Adafruit_NeoPixel pixels(NUMPIXELS, LEDstrip);
 const char* ssid     = "CE-Hub-Student";
 const char* password = "casa-ce-gagarin-public-service";
@@ -42,6 +44,24 @@ void ledstrip(int n, int r, int g, int b)
   delay(100);
 }
 
+void startWifi() {
+  // We start by connecting to a WiFi network
+  Serial.println();
+  Serial.print("Connecting to ");
+  Serial.println(ssid);
+  WiFi.begin(ssid, password);
+
+  // check to see if connected and wait until you are
+  while (WiFi.status() != WL_CONNECTED) {
+    delay(500);
+    Serial.print(".");
+  }
+  Serial.println("");
+  Serial.println("WiFi connected");
+  Serial.print("IP address: ");
+  Serial.println(WiFi.localIP());
+}
+
 void setup() {
   Serial.begin(115200);
   delay(100);
@@ -61,56 +81,19 @@ void setup() {
 
 void loop() {
   // handler for receiving requests to webserver
-  
-  digitalWrite(LED1,HIGH);
-  digitalWrite(LED2,HIGH);
   server.handleClient();
-  delay(1000);
-    sendMQTT();
-  Serial.print("CDS:");
-  Serial.println(CDS);
-  Serial.print("TPS:");
-  Serial.println(TPS);
+  sendMQTT();
   client.loop();
-  u8g2.setFont(u8g2_font_unifont_t_chinese2); // use chinese2
-  u8g2.firstPage();
-  do
-  {
-    u8g2.setCursor(0, 15);
-    u8g2.print("CDS:");
-    u8g2.setCursor(0, 30);
-    u8g2.print(CDS); 
-    u8g2.setCursor(0, 45);
-    u8g2.print("TPS:");  
-    u8g2.setCursor(0, 60);
-    u8g2.print(TPS);    
-    
-  } while (u8g2.nextPage()); 
-  if(CDS>400)
-  {
-    angle=(CDS-300)*18/50;
-    myservo.write(angle);
-  }
+  printinformation();
+  Serial.print("Windspeed:");
+  Serial.print(ws);
+  Serial.print("RAIN:");
+  Serial.print(rain);
+  Serial.print("Temperature:");
+  Serial.print(tmp);
 }
 
 
-void startWifi() {
-  // We start by connecting to a WiFi network
-  Serial.println();
-  Serial.print("Connecting to ");
-  Serial.println(ssid);
-  WiFi.begin(ssid, password);
-
-  // check to see if connected and wait until you are
-  while (WiFi.status() != WL_CONNECTED) {
-    delay(500);
-    Serial.print(".");
-  }
-  Serial.println("");
-  Serial.println("WiFi connected");
-  Serial.print("IP address: ");
-  Serial.println(WiFi.localIP());
-}
 
 void sendMQTT() {
 
@@ -125,12 +108,50 @@ void callback(char* topic, byte* payload, unsigned int length) {
   Serial.print(topic);
   Serial.print("] ");
   char cage[100];
-  
+  char cage1[100];
+  char cage2[100]; 
   String jsonString = "";
-  for (int i = 0; i < length; i++) {
-    cage[i]=payload[i];
-    jsonString += char(payload[i]);
+  if (strcmp(topic, "UCL/OPS/Garden/WST/dvp2/outTemp_C") == 0) {
+      for (int i = 0; i < length; i++) {
+    cage[i]=char(payload[i]);
     Serial.print((char)payload[i]);
+  }
+  Serial.println();
+  float tmp1 = atof(cage);
+  if(tmp1!=0)
+  tmp=tmp1;
+  Serial.print("TMP:");
+  Serial.println(tmp1);
+  } 
+  else if (strcmp(topic, "UCL/OPS/Garden/WST/dvp2/windSpeed_kph") == 0) {
+          for (int i = 0; i < length; i++) {
+    cage1[i]=char(payload[i]);
+    Serial.print((char)payload[i]);
+  }
+  float ws1 = atof(cage1);
+  if(ws1!=0)
+  ws=ws1;
+  Serial.println();
+  Serial.print("WS:");
+  Serial.println(ws1);
+  Serial.println();
+  }
+  else if (strcmp(topic, "UCL/OPS/Garden/WST/dvp2/dayRain_cm") == 0) {
+          for (int i = 0; i < length; i++) {
+    cage2[i]=char(payload[i]);
+    Serial.print((char)payload[i]);
+  }
+  Serial.println();
+  float rain1 = atof(cage2);
+  if(rain1!=0)
+  rain=rain1;
+  Serial.print("RAIN:");
+  Serial.println(rain1);
+  Serial.println();
+  }
+
+  for (int i = 0; i < length; i++) {
+    jsonString += char(payload[i]);
   }
   StaticJsonDocument<200> jsonDoc;
   DeserializationError error = deserializeJson(jsonDoc, jsonString);
@@ -161,29 +182,29 @@ void callback(char* topic, byte* payload, unsigned int length) {
   } else {
     digitalWrite(BUILTIN_LED, HIGH);  // Turn the LED off by making the voltage HIGH
   }
-  if(TPS<=0)
+  if(tmp<=0)
   {
     ledstrip(0,255,0,0);
   }
-    else if(TPS<5&&TPS>0)
+    else if(tmp<5&&tmp>0)
   {
     ledstrip(0,255,0,0);
     ledstrip(1,170,85,0); 
   }
-    else if(TPS<10&&TPS>5)
+    else if(tmp<10&&tmp>5)
   {
     ledstrip(0,255,0,0);
     ledstrip(1,170,85,0);  
     ledstrip(2,85,170,0); 
   }
-    else if(TPS<15&&TPS>10)
+    else if(tmp<15&&tmp>10)
   {
     ledstrip(0,255,0,0);
     ledstrip(1,170,85,0);  
     ledstrip(2,85,170,0); 
     ledstrip(3,0,255,0); 
   }
-    else if(TPS<20&&TPS>15)
+    else if(tmp<20&&tmp>15)
   {
     ledstrip(0,255,0,0);
     ledstrip(1,170,85,0);  
@@ -191,7 +212,7 @@ void callback(char* topic, byte* payload, unsigned int length) {
     ledstrip(3,0,255,0);
     ledstrip(4,64,191,0);
   }
-    else if(TPS<25&&TPS>20)
+    else if(tmp<25&&tmp>20)
   {
     ledstrip(0,255,0,0);
     delay(500);
@@ -205,7 +226,7 @@ void callback(char* topic, byte* payload, unsigned int length) {
     delay(500);
     ledstrip(5,128,128,0); 
   }
-    else if(TPS<30&&TPS>25)
+    else if(tmp<30&&tmp>25)
   {
     ledstrip(0,255,0,0);
     ledstrip(1,170,85,0);  
@@ -215,7 +236,7 @@ void callback(char* topic, byte* payload, unsigned int length) {
     ledstrip(5,128,128,0);
     ledstrip(6,191,64,0); 
   }
-    else if(TPS>=30)
+    else if(tmp>=30)
   {
     ledstrip(0,255,0,0);
     ledstrip(1,170,85,0);  
@@ -226,7 +247,71 @@ void callback(char* topic, byte* payload, unsigned int length) {
     ledstrip(6,191,64,0); 
     ledstrip(7,255,0,0); 
   }
-
+    if(CDS>600&&tmp!=0)
+  {
+    u8g2.setFont(u8g2_font_unifont_t_chinese2); // use chinese2
+    u8g2.firstPage();
+    do
+    {
+    u8g2.setCursor(3, 15);
+    u8g2.print("CO2 is too high!");
+    u8g2.setCursor(3, 30);
+    u8g2.print("Please open");
+    u8g2.setCursor(3, 45);
+    u8g2.print("the window!");    
+    } while (u8g2.nextPage()); 
+    delay(2000);
+    printinformation();
+  }
+   if(CDS>0&&tmp>0)
+   {
+   if(tmp>10&&tmp<25&&rain>0&&ws>3.6&&ws<10.8)
+  {
+  digitalWrite(LED1,LOW);
+  digitalWrite(LED2,HIGH);
+    u8g2.setFont(u8g2_font_unifont_t_chinese2); // use chinese2
+  u8g2.firstPage();
+  do
+  {
+    u8g2.setCursor(3, 15);
+    u8g2.print("Good weather");
+    u8g2.setCursor(3, 30);
+    u8g2.print("You can enjoy"); 
+    u8g2.setCursor(3, 45);
+    u8g2.print("outside!:");  
+    u8g2.setCursor(3, 60);
+    u8g2.print("");    
+    
+  } while (u8g2.nextPage()); 
+  delay(2000);
+  printinformation(); 
+  delay(2000);  
+  }
+  else 
+  {
+  digitalWrite(LED1,HIGH);
+  digitalWrite(LED2,LOW);
+  u8g2.setFont(u8g2_font_unifont_t_chinese2); // use chinese2
+  u8g2.firstPage();
+  do
+  {
+    u8g2.setCursor(3, 15);
+    u8g2.print("Bad weather");
+    u8g2.setCursor(3, 30);
+    u8g2.print("Please stay at"); 
+    u8g2.setCursor(3, 45);
+    u8g2.print("your home!");     
+  } while (u8g2.nextPage());  
+  delay(2000);
+  printinformation();
+  delay(2000);
+  }
+   }
+    if(CDS>400)
+  {
+    angle=(CDS-400)*2000/10000;
+    myservo.write(angle);
+  }
 }
 
 void reconnect() {
@@ -243,6 +328,9 @@ void reconnect() {
       // ... and resubscribe
       client.subscribe("UCL/OPSEBO/107/Room/CDS/Value");
       client.subscribe("UCL/OPSEBO/107/Room/TPS/Value");
+      client.subscribe("UCL/OPS/Garden/WST/dvp2/dayRain_cm");
+      client.subscribe("UCL/OPS/Garden/WST/dvp2/windSpeed_kph");
+      client.subscribe("UCL/OPS/Garden/WST/dvp2/outTemp_C");
     } else {
       Serial.print("failed, rc=");
       Serial.print(client.state());
@@ -251,4 +339,22 @@ void reconnect() {
       delay(5000);
     }
   }
+}
+
+void printinformation()
+{
+  u8g2.setFont(u8g2_font_unifont_t_chinese2); // use chinese2
+  u8g2.firstPage();
+  do
+  {
+    u8g2.setCursor(3, 15);
+    u8g2.print("CO2(Indoor):");
+    u8g2.setCursor(3, 30);
+    u8g2.print(CDS); 
+    u8g2.setCursor(3, 45);
+    u8g2.print("Temperature:");  
+    u8g2.setCursor(3, 60);
+    u8g2.print(tmp);    
+    
+  } while (u8g2.nextPage());   
 }
