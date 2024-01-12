@@ -114,6 +114,14 @@
 
   <img src="./images/QR.png" style="zoom:50%;" />
 
+* After that, you can get the model and chart which can show the real-time data on your phone. The model will run similar to the physical device and the chart will show the historical data of indoor CO2 and outdoor temperature.
+
+<img src="./images/ModelAndChart.png" style="zoom:50%;" />
+
+* To help the users get the data more conveniently and directly, once you press the "detail" button on the right bottom, the detailed information and data will show on your screen as text.
+
+<img src="./images/Detail.png" style="zoom: 67%;" />
+
 ****
 
 ## Future Work
